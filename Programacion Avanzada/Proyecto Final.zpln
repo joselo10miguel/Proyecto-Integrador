@@ -1,0 +1,945 @@
+﻿{
+  "paragraphs": [
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446179114_517075776",
+      "id": "paragraph_1627446179114_517075776",
+      "dateCreated": "2021-07-27T23:22:59-0500",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:845"
+    },
+    {
+      "text": "val data  = spark\n.read\n.option(\"inferSchema\", \"true\")\n.option(\"header\", \"true\")\n.option(\"delimiter\", \",\")\n.csv(\"/home/omega/Documentos/owid-covid-data.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:30:05-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=0",
+              "$$hashKey": "object:1260"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=1",
+              "$$hashKey": "object:1261"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627440173645_725161523",
+      "id": "paragraph_1627440173645_725161523",
+      "dateCreated": "2021-07-27T21:42:53-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:33",
+      "dateFinished": "2021-07-27T23:30:34-0500",
+      "dateStarted": "2021-07-27T23:30:05-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [iso_code: string, continent: string ... 58 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627445919954_1879194734",
+      "id": "paragraph_1627445919954_1879194734",
+      "dateCreated": "2021-07-27T23:18:39-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:469",
+      "text": "data.schema",
+      "dateUpdated": "2021-07-27T23:30:50-0500",
+      "dateFinished": "2021-07-27T23:30:51-0500",
+      "dateStarted": "2021-07-27T23:30:50-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.types.StructType\u001b[0m = StructType(StructField(iso_code,StringType,true), StructField(continent,StringType,true), StructField(location,StringType,true), StructField(date,TimestampType,true), StructField(total_cases,DoubleType,true), StructField(new_cases,DoubleType,true), StructField(new_cases_smoothed,DoubleType,true), StructField(total_deaths,DoubleType,true), StructField(new_deaths,DoubleType,true), StructField(new_deaths_smoothed,DoubleType,true), StructField(total_cases_per_million,DoubleType,true), StructField(new_cases_per_million,DoubleType,true), StructField(new_cases_smoothed_per_million,DoubleType,true), StructField(total_deaths_per_million,DoubleType,true), StructField(new_deaths_per_million,DoubleType,true), StructField(new_de..."
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md \n# Consultas csv",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T21:43:48-0500",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Consultas csv</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627440192137_2116828816",
+      "id": "paragraph_1627440192137_2116828816",
+      "dateCreated": "2021-07-27T21:43:12-0500",
+      "dateStarted": "2021-07-27T21:43:48-0500",
+      "dateFinished": "2021-07-27T21:43:52-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:35"
+    },
+    {
+      "text": "%md\n### ¿Cuáles son los país que NO han reportado valor para este columna?",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:43:50-0500",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627447406335_1647313512",
+      "id": "paragraph_1627447406335_1647313512",
+      "dateCreated": "2021-07-27T23:43:26-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4023",
+      "dateFinished": "2021-07-27T23:43:50-0500",
+      "dateStarted": "2021-07-27T23:43:50-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>¿Cuáles son los país que NO han reportado valor para este columna?</h3>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "data.select($\"location\").distinct.where($\"weekly_icu_admissions\".isNull).show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:31:19-0500",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=2",
+              "$$hashKey": "object:1374"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=3",
+              "$$hashKey": "object:1375"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=4",
+              "$$hashKey": "object:1376"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446166071_991553730",
+      "id": "paragraph_1627446166071_991553730",
+      "dateCreated": "2021-07-27T23:22:46-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:776",
+      "dateFinished": "2021-07-27T23:31:23-0500",
+      "dateStarted": "2021-07-27T23:31:19-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------+\n|     location|\n+-------------+\n|         Chad|\n|     Anguilla|\n|     Paraguay|\n|       Russia|\n|International|\n|        Macao|\n|        World|\n|        Yemen|\n|      Senegal|\n|       Sweden|\n|     Kiribati|\n|       Guyana|\n|      Eritrea|\n|       Jersey|\n|  Philippines|\n|     Djibouti|\n|        Tonga|\n|     Malaysia|\n|    Singapore|\n|         Fiji|\n+-------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627447448727_1047559910",
+      "id": "paragraph_1627447448727_1047559910",
+      "dateCreated": "2021-07-27T23:44:08-0500",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4113",
+      "text": "%md \n¿Cuál es el porcentaje de país que han reportado datos?",
+      "dateUpdated": "2021-07-27T23:44:33-0500"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=5",
+              "$$hashKey": "object:1460"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=6",
+              "$$hashKey": "object:1461"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=7",
+              "$$hashKey": "object:1462"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446384617_1136571474",
+      "id": "paragraph_1627446384617_1136571474",
+      "dateCreated": "2021-07-27T23:26:24-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:923",
+      "text": "data.select($\"iso_code\").where($\"weekly_icu_admissions\".isNotNull).distinct().sort(\"iso_code\")\n.count * (100.0/data.select($\"iso_code\").distinct.count)",
+      "dateUpdated": "2021-07-27T23:31:41-0500",
+      "dateFinished": "2021-07-27T23:31:50-0500",
+      "dateStarted": "2021-07-27T23:31:41-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres3\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 6.4935064935064934\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=8",
+              "$$hashKey": "object:1512"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446411183_810700297",
+      "id": "paragraph_1627446411183_810700297",
+      "dateCreated": "2021-07-27T23:26:51-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:992",
+      "text": "data.select(avg($\"weekly_icu_admissions\")).show()",
+      "dateUpdated": "2021-07-27T23:31:54-0500",
+      "dateFinished": "2021-07-27T23:31:55-0500",
+      "dateStarted": "2021-07-27T23:31:54-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------------+\n|avg(weekly_icu_admissions)|\n+--------------------------+\n|         251.9040093264249|\n+--------------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=9",
+              "$$hashKey": "object:1559"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446424958_58340880",
+      "id": "paragraph_1627446424958_58340880",
+      "dateCreated": "2021-07-27T23:27:04-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1061",
+      "text": "data.select($\"iso_code\").where($\"weekly_icu_admissions\".isNotNull).distinct().sort(\"iso_code\").show",
+      "dateUpdated": "2021-07-27T23:31:58-0500",
+      "dateFinished": "2021-07-27T23:32:01-0500",
+      "dateStarted": "2021-07-27T23:31:58-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------+\n|iso_code|\n+--------+\n|     CYP|\n|     CZE|\n|     ESP|\n|     EST|\n|     FRA|\n|     GRC|\n|     IRL|\n|     ISR|\n|     LTU|\n|     LVA|\n|     MLT|\n|     NLD|\n|     NOR|\n|     SVN|\n|     SWE|\n+--------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=10",
+              "$$hashKey": "object:1609"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446438542_27141900",
+      "id": "paragraph_1627446438542_27141900",
+      "dateCreated": "2021-07-27T23:27:18-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1130",
+      "text": "data.select($\"iso_code\", $\"population\", $\"weekly_icu_admissions\").where($\"weekly_icu_admissions\".isNotNull).distinct().withColumn(\"UCIMillonHabitantes\", col(\"weekly_icu_admissions\")/(col(\"population\")/1000000)).sort(\"location\").show",
+      "dateUpdated": "2021-07-27T23:32:07-0500",
+      "dateFinished": "2021-07-27T23:32:11-0500",
+      "dateStarted": "2021-07-27T23:32:07-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------+----------+---------------------+-------------------+\n|iso_code|population|weekly_icu_admissions|UCIMillonHabitantes|\n+--------+----------+---------------------+-------------------+\n|     CYP|  888005.0|                 15.0| 16.891796780423533|\n|     CYP|  888005.0|                 18.0| 20.270156136508238|\n|     CYP|  888005.0|                  3.0| 3.3783593560847067|\n|     CYP|  888005.0|                 20.0|  22.52239570723138|\n|     CYP|  888005.0|                 17.0|  19.14403635114667|\n|     CYP|  888005.0|                  1.0| 1.1261197853615688|\n|     CYP|  888005.0|                  7.0|  7.882838497530982|\n|     CYP|  888005.0|                  8.0|   9.00895828289255|\n|     CYP|  888005.0|                 25.0|  28.15299463403922|\n|     CYP|  888005.0|                 13.0| 14.639557209700396|\n|     CYP|  888005.0|                 12.0| 13.513437424338827|\n|     CYP|  888005.0|                  4.0|  4.504479141446275|\n|     CYP|  888005.0|                 28.0|  31.53135399012393|\n|     CYP|  888005.0|                 23.0| 25.900755063316083|\n|     CYP|  888005.0|                 22.0| 24.774635277954516|\n|     CYP|  888005.0|                 16.0|   18.0179165657851|\n|     CYP|  888005.0|                 24.0| 27.026874848677654|\n|     CYP|  888005.0|                  9.0| 10.135078068254119|\n|     CYP|  888005.0|                 10.0|  11.26119785361569|\n|     CYP|  888005.0|                  2.0| 2.2522395707231375|\n+--------+----------+---------------------+-------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n## Visualizacion a travès del Interprete",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-28T00:34:30-0500",
+      "progress": 0,
+      "config": {
+        "tableHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Visualizacion a travès del Interprete</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627440228132_399330300",
+      "id": "paragraph_1627440228132_399330300",
+      "dateCreated": "2021-07-27T21:43:48-0500",
+      "dateStarted": "2021-07-27T21:44:42-0500",
+      "dateFinished": "2021-07-27T21:44:42-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:36"
+    },
+    {
+      "text": "%md\n## Visualizacion a travès de Helium ",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:20:31-0500",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446025596_1002369150",
+      "id": "paragraph_1627446025596_1002369150",
+      "dateCreated": "2021-07-27T23:20:25-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:667",
+      "dateFinished": "2021-07-27T23:20:31-0500",
+      "dateStarted": "2021-07-27T23:20:31-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Visualizacion a travès de Helium</h2>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "z.show(data.select($\"date\",log($\"new_cases\"), log($\"new_vaccinations\")))",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:39:06-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "date": "string",
+                      "LOG(new_cases)": "string",
+                      "LOG(new_vaccinations)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "date",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "LOG(new_cases)",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=11",
+              "$$hashKey": "object:2816"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446778263_1847007812",
+      "id": "paragraph_1627446778263_1847007812",
+      "dateCreated": "2021-07-27T23:32:58-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1620",
+      "dateFinished": "2021-07-27T23:38:55-0500",
+      "dateStarted": "2021-07-27T23:38:54-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "date\tLOG(new_cases)\tLOG(new_vaccinations)\n2020-02-24 00:00:00.0\t0.0\tnull\n2020-02-25 00:00:00.0\tnull\tnull\n2020-02-26 00:00:00.0\tnull\tnull\n2020-02-27 00:00:00.0\tnull\tnull\n2020-02-28 00:00:00.0\tnull\tnull\n2020-02-29 00:00:00.0\tnull\tnull\n2020-03-01 00:00:00.0\tnull\tnull\n2020-03-02 00:00:00.0\tnull\tnull\n2020-03-03 00:00:00.0\t0.0\tnull\n2020-03-04 00:00:00.0\t0.6931471805599453\tnull\n2020-03-05 00:00:00.0\tnull\tnull\n2020-03-06 00:00:00.0\tnull\tnull\n2020-03-07 00:00:00.0\tnull\tnull\n2020-03-08 00:00:00.0\t0.0\tnull\n2020-03-09 00:00:00.0\t0.6931471805599453\tnull\n2020-03-10 00:00:00.0\t0.0\tnull\n2020-03-11 00:00:00.0\t1.0986122886681098\tnull\n2020-03-12 00:00:00.0\t0.0\tnull\n2020-03-13 00:00:00.0\t0.0\tnull\n2020-03-14 00:00:00.0\t0.6931471805599453\tnull\n2020-03-15 00:00:00.0\t0.0\tnull\n2020-03-16 00:00:00.0\t0.6931471805599453\tnull\n2020-03-17 00:00:00.0\t0.6931471805599453\tnull\n2020-03-18 00:00:00.0\t1.3862943611198906\tnull\n2020-03-19 00:00:00.0\t0.0\tnull\n2020-03-20 00:00:00.0\t1.3862943611198906\tnull\n2020-03-21 00:00:00.0\t0.0\tnull\n2020-03-22 00:00:00.0\t1.3862943611198906\tnull\n2020-03-23 00:00:00.0\t1.9459101490553132\tnull\n2020-03-24 00:00:00.0\t0.6931471805599453\tnull\n2020-03-25 00:00:00.0\t3.4965075614664802\tnull\n2020-03-26 00:00:00.0\t1.3862943611198906\tnull\n2020-03-27 00:00:00.0\t2.3978952727983707\tnull\n2020-03-28 00:00:00.0\t2.772588722239781\tnull\n2020-03-29 00:00:00.0\t2.3978952727983707\tnull\n2020-03-30 00:00:00.0\t3.332204510175204\tnull\n2020-03-31 00:00:00.0\t3.367295829986474\tnull\n2020-04-01 00:00:00.0\t3.091042453358316\tnull\n2020-04-02 00:00:00.0\t3.7612001156935624\tnull\n2020-04-03 00:00:00.0\t3.5553480614894135\tnull\n2020-04-04 00:00:00.0\t3.2188758248682006\tnull\n2020-04-05 00:00:00.0\t3.6375861597263857\tnull\n2020-04-06 00:00:00.0\t3.4011973816621555\tnull\n2020-04-07 00:00:00.0\t4.02535169073515\tnull\n2020-04-08 00:00:00.0\t3.044522437723423\tnull\n2020-04-09 00:00:00.0\t3.6888794541139363\tnull\n2020-04-10 00:00:00.0\t3.8501476017100584\tnull\n2020-04-11 00:00:00.0\t3.1780538303479458\tnull\n2020-04-12 00:00:00.0\t3.9512437185814275\tnull\n2020-04-13 00:00:00.0\t4.060443010546419\tnull\n2020-04-14 00:00:00.0\t3.8918202981106265\tnull\n2020-04-15 00:00:00.0\t4.248495242049359\tnull\n2020-04-16 00:00:00.0\t4.02535169073515\tnull\n2020-04-17 00:00:00.0\t4.189654742026425\tnull\n2020-04-18 00:00:00.0\t3.295836866004329\tnull\n2020-04-19 00:00:00.0\t4.143134726391533\tnull\n2020-04-20 00:00:00.0\t3.4011973816621555\tnull\n2020-04-21 00:00:00.0\t4.189654742026425\tnull\n2020-04-22 00:00:00.0\t4.430816798843313\tnull\n2020-04-23 00:00:00.0\t4.07753744390572\tnull\n2020-04-24 00:00:00.0\t4.553876891600541\tnull\n2020-04-25 00:00:00.0\t4.890349128221754\tnull\n2020-04-26 00:00:00.0\t4.219507705176107\tnull\n2020-04-27 00:00:00.0\t5.147494476813453\tnull\n2020-04-28 00:00:00.0\t4.836281906951478\tnull\n2020-04-29 00:00:00.0\t4.700480365792417\tnull\n2020-04-30 00:00:00.0\t5.231108616854587\tnull\n2020-05-01 00:00:00.0\t5.099866427824199\tnull\n2020-05-02 00:00:00.0\t5.187385805840755\tnull\n2020-05-03 00:00:00.0\t5.459585514144159\tnull\n2020-05-04 00:00:00.0\t5.247024072160486\tnull\n2020-05-05 00:00:00.0\t5.799092654460526\tnull\n2020-05-06 00:00:00.0\t5.123963979403259\tnull\n2020-05-07 00:00:00.0\t5.14166355650266\tnull\n2020-05-08 00:00:00.0\t5.37989735354046\tnull\n2020-05-09 00:00:00.0\t5.564520407322694\tnull\n2020-05-10 00:00:00.0\t5.8888779583328805\tnull\n2020-05-11 00:00:00.0\t5.648974238161206\tnull\n2020-05-12 00:00:00.0\t5.638354669333745\tnull\n2020-05-13 00:00:00.0\t5.556828061699537\tnull\n2020-05-14 00:00:00.0\t6.023447592961033\tnull\n2020-05-15 00:00:00.0\t6.025865973825314\tnull\n2020-05-16 00:00:00.0\t5.855071922202427\tnull\n2020-05-17 00:00:00.0\t5.568344503761097\tnull\n2020-05-18 00:00:00.0\t6.0112671744041615\tnull\n2020-05-19 00:00:00.0\t6.364750756851911\tnull\n2020-05-20 00:00:00.0\t6.198478716492308\tnull\n2020-05-21 00:00:00.0\t6.274762021241939\tnull\n2020-05-22 00:00:00.0\t6.295266001439646\tnull\n2020-05-23 00:00:00.0\t6.661854740545311\tnull\n2020-05-24 00:00:00.0\t6.369900982828227\tnull\n2020-05-25 00:00:00.0\t6.3818160174060985\tnull\n2020-05-26 00:00:00.0\t6.489204931325317\tnull\n2020-05-27 00:00:00.0\t6.437751649736401\tnull\n2020-05-28 00:00:00.0\t6.363028103540465\tnull\n2020-05-29 00:00:00.0\t6.434546518787453\tnull\n2020-05-30 00:00:00.0\t6.763884908562435\tnull\n2020-05-31 00:00:00.0\t6.522092798170152\tnull\n2020-06-01 00:00:00.0\t6.300785794663244\tnull\n2020-06-02 00:00:00.0\t6.63200177739563\tnull\n2020-06-03 00:00:00.0\t6.630683385642372\tnull\n2020-06-04 00:00:00.0\t6.668228248417403\tnull\n2020-06-05 00:00:00.0\t6.818924065275521\tnull\n2020-06-06 00:00:00.0\t6.366470447731438\tnull\n2020-06-07 00:00:00.0\t6.673297967767654\tnull\n2020-06-08 00:00:00.0\t6.354370040797351\tnull\n2020-06-09 00:00:00.0\t6.295266001439646\tnull\n2020-06-10 00:00:00.0\t6.52795791762255\tnull\n2020-06-11 00:00:00.0\t6.617402977974478\tnull\n2020-06-12 00:00:00.0\t6.486160788944089\tnull\n2020-06-13 00:00:00.0\t6.320768294250582\tnull\n2020-06-14 00:00:00.0\t6.498282149476434\tnull\n2020-06-15 00:00:00.0\t6.634633357861686\tnull\n2020-06-16 00:00:00.0\t6.663132695990803\tnull\n2020-06-17 00:00:00.0\t6.335054251498059\tnull\n2020-06-18 00:00:00.0\t6.489204931325317\tnull\n2020-06-19 00:00:00.0\t5.846438775057725\tnull\n2020-06-20 00:00:00.0\t6.302618975744905\tnull\n2020-06-21 00:00:00.0\t6.013715156042802\tnull\n2020-06-22 00:00:00.0\t5.736572297479192\tnull\n2020-06-23 00:00:00.0\t5.780743515792329\tnull\n2020-06-24 00:00:00.0\t5.455321115357702\tnull\n2020-06-25 00:00:00.0\t6.131226489483141\tnull\n2020-06-26 00:00:00.0\t5.62040086571715\tnull\n2020-06-27 00:00:00.0\t5.10594547390058\tnull\n2020-06-28 00:00:00.0\t5.860786223465865\tnull\n2020-06-29 00:00:00.0\t5.602118820879701\tnull\n2020-06-30 00:00:00.0\t5.631211781821365\tnull\n2020-07-01 00:00:00.0\t5.765191102784844\tnull\n2020-07-02 00:00:00.0\t5.225746673713202\tnull\n2020-07-03 00:00:00.0\t5.71042701737487\tnull\n2020-07-04 00:00:00.0\t5.8522024797744745\tnull\n2020-07-05 00:00:00.0\t5.631211781821365\tnull\n2020-07-06 00:00:00.0\t5.476463551931511\tnull\n2020-07-07 00:00:00.0\t5.267858159063328\tnull\n2020-07-08 00:00:00.0\t5.3471075307174685\tnull\n2020-07-09 00:00:00.0\t5.749392985908253\tnull\n2020-07-10 00:00:00.0\t5.655991810819852\tnull\n2020-07-11 00:00:00.0\t5.147494476813453\tnull\n2020-07-12 00:00:00.0\t4.442651256490317\tnull\n2020-07-13 00:00:00.0\t5.0369526024136295\tnull\n2020-07-14 00:00:00.0\t4.90527477843843\tnull\n2020-07-15 00:00:00.0\t5.537334267018537\tnull\n2020-07-16 00:00:00.0\t4.330733340286331\tnull\n2020-07-17 00:00:00.0\t5.0689042022202315\tnull\n2020-07-18 00:00:00.0\t4.0943445622221\tnull\n2020-07-19 00:00:00.0\t5.159055299214529\tnull\n2020-07-20 00:00:00.0\t3.6888794541139363\tnull\n2020-07-21 00:00:00.0\t4.718498871295094\tnull\n2020-07-22 00:00:00.0\t4.718498871295094\tnull\n2020-07-23 00:00:00.0\t5.303304908059076\tnull\n2020-07-24 00:00:00.0\t4.0943445622221\tnull\n2020-07-25 00:00:00.0\t3.871201010907891\tnull\n2020-07-26 00:00:00.0\t4.795790545596741\tnull\n2020-07-27 00:00:00.0\t4.663439094112067\tnull\n2020-07-28 00:00:00.0\t4.653960350157523\tnull\n2020-07-29 00:00:00.0\t4.653960350157523\tnull\n2020-07-30 00:00:00.0\t4.23410650459726\tnull\n2020-07-31 00:00:00.0\t4.890349128221754\tnull\n2020-08-01 00:00:00.0\t3.5553480614894135\tnull\n2020-08-02 00:00:00.0\t0.0\tnull\n2020-08-03 00:00:00.0\t3.58351893845611\tnull\n2020-08-04 00:00:00.0\t3.58351893845611\tnull\n2020-08-05 00:00:00.0\t3.8501476017100584\tnull\n2020-08-06 00:00:00.0\t4.68213122712422\tnull\n2020-08-07 00:00:00.0\t4.356708826689592\tnull\n2020-08-08 00:00:00.0\t3.6888794541139363\tnull\n2020-08-09 00:00:00.0\t3.6109179126442243\tnull\n2020-08-10 00:00:00.0\t4.248495242049359\tnull\n2020-08-11 00:00:00.0\t4.672828834461906\tnull\n2020-08-12 00:00:00.0\t4.330733340286331\tnull\n2020-08-13 00:00:00.0\t4.454347296253507\tnull\n2020-08-14 00:00:00.0\t4.31748811353631\tnull\n2020-08-15 00:00:00.0\t3.8066624897703196\tnull\n2020-08-16 00:00:00.0\t3.871201010907891\tnull\n2020-08-17 00:00:00.0\t4.343805421853684\tnull\n2020-08-18 00:00:00.0\t3.7612001156935624\tnull\n2020-08-19 00:00:00.0\t3.6888794541139363\tnull\n2020-08-20 00:00:00.0\t4.624972813284271\tnull\n2020-08-21 00:00:00.0\t3.4965075614664802\tnull\n2020-08-22 00:00:00.0\t4.07753744390572\tnull\n2020-08-23 00:00:00.0\t3.828641396489095\tnull\n2020-08-24 00:00:00.0\t4.007333185232471\tnull\n2020-08-25 00:00:00.0\t2.772588722239781\tnull\n2020-08-26 00:00:00.0\t3.7376696182833684\tnull\n2020-08-27 00:00:00.0\t2.772588722239781\tnull\n2020-08-28 00:00:00.0\t2.3978952727983707\tnull\n2020-08-29 00:00:00.0\t1.0986122886681098\tnull\n2020-08-30 00:00:00.0\t3.091042453358316\tnull\n2020-08-31 00:00:00.0\t1.3862943611198906\tnull\n2020-09-01 00:00:00.0\t3.5263605246161616\tnull\n2020-09-02 00:00:00.0\t3.912023005428146\tnull\n2020-09-03 00:00:00.0\t3.8066624897703196\tnull\n2020-09-04 00:00:00.0\t2.772588722239781\tnull\n2020-09-05 00:00:00.0\t2.995732273553991\tnull\n2020-09-06 00:00:00.0\t4.30406509320417\tnull\n2020-09-07 00:00:00.0\t4.564348191467836\tnull\n2020-09-08 00:00:00.0\t3.258096538021482\tnull\n2020-09-09 00:00:00.0\t3.1780538303479458\tnull\n2020-09-10 00:00:00.0\t3.332204510175204\tnull\n2020-09-11 00:00:00.0\t3.5263605246161616\tnull\n2020-09-12 00:00:00.0\t3.5553480614894135\tnull\n2020-09-13 00:00:00.0\t4.31748811353631\tnull\n2020-09-14 00:00:00.0\t4.02535169073515\tnull\n2020-09-15 00:00:00.0\t3.7612001156935624\tnull\n2020-09-16 00:00:00.0\t3.6888794541139363\tnull\n2020-09-17 00:00:00.0\t2.833213344056216\tnull\n2020-09-18 00:00:00.0\t3.2188758248682006\tnull\n2020-09-19 00:00:00.0\t3.091042453358316\tnull\n2020-09-20 00:00:00.0\t4.8283137373023015\tnull\n2020-09-21 00:00:00.0\t3.4011973816621555\tnull\n2020-09-22 00:00:00.0\t3.091042453358316\tnull\n2020-09-23 00:00:00.0\t3.8918202981106265\tnull\n2020-09-24 00:00:00.0\t3.2188758248682006\tnull\n2020-09-25 00:00:00.0\t2.772588722239781\tnull\n2020-09-26 00:00:00.0\t1.791759469228055\tnull\n2020-09-27 00:00:00.0\t3.5553480614894135\tnull\n2020-09-28 00:00:00.0\t2.4849066497880004\tnull\n2020-09-29 00:00:00.0\t2.70805020110221\tnull\n2020-09-30 00:00:00.0\t2.6390573296152584\tnull\n2020-10-01 00:00:00.0\t2.833213344056216\tnull\n2020-10-02 00:00:00.0\t1.6094379124341003\tnull\n2020-10-03 00:00:00.0\t1.9459101490553132\tnull\n2020-10-04 00:00:00.0\t3.784189633918261\tnull\n2020-10-05 00:00:00.0\t4.394449154672439\tnull\n2020-10-06 00:00:00.0\t4.1588830833596715\tnull\n2020-10-07 00:00:00.0\t4.127134385045092\tnull\n2020-10-08 00:00:00.0\t4.219507705176107\tnull\n2020-10-09 00:00:00.0\t4.343805421853684\tnull\n2020-10-10 00:00:00.0\t2.302585092994046\tnull\n2020-10-11 00:00:00.0\t4.564348191467836\tnull\n2020-10-12 00:00:00.0\t4.2626798770413155\tnull\n2020-10-13 00:00:00.0\t4.060443010546419\tnull\n2020-10-14 00:00:00.0\t4.189654742026425\tnull\n2020-10-15 00:00:00.0\t3.4657359027997265\tnull\n2020-10-16 00:00:00.0\t4.127134385045092\tnull\n2020-10-17 00:00:00.0\t3.970291913552122\tnull\n2020-10-18 00:00:00.0\t4.07753744390572\tnull\n2020-10-19 00:00:00.0\t4.465908118654584\tnull\n2020-10-20 00:00:00.0\t4.406719247264253\tnull\n2020-10-21 00:00:00.0\t4.948759890378168\tnull\n2020-10-22 00:00:00.0\t4.7535901911063645\tnull\n2020-10-23 00:00:00.0\t4.110873864173311\tnull\n2020-10-24 00:00:00.0\t4.394449154672439\tnull\n2020-10-25 00:00:00.0\t4.174387269895637\tnull\n2020-10-26 00:00:00.0\t4.6443908991413725\tnull\n2020-10-27 00:00:00.0\t4.553876891600541\tnull\n2020-10-28 00:00:00.0\t4.727387818712341\tnull\n2020-10-29 00:00:00.0\t4.812184355372417\tnull\n2020-10-30 00:00:00.0\t4.189654742026425\tnull\n2020-10-31 00:00:00.0\t4.51085950651685\tnull\n2020-11-01 00:00:00.0\t4.330733340286331\tnull\n2020-11-02 00:00:00.0\t4.882801922586371\tnull\n2020-11-03 00:00:00.0\t4.553876891600541\tnull\n2020-11-04 00:00:00.0\t4.454347296253507\tnull\n2020-11-05 00:00:00.0\t4.795790545596741\tnull\n2020-11-06 00:00:00.0\t3.6888794541139363\tnull\n2020-11-07 00:00:00.0\t4.060443010546419\tnull\n2020-11-08 00:00:00.0\t4.836281906951478\tnull\n2020-11-09 00:00:00.0\t4.927253685157205\tnull\n2020-11-10 00:00:00.0\t5.111987788356544\tnull\n2020-11-11 00:00:00.0\t4.983606621708336\tnull\n2020-11-12 00:00:00.0\t5.225746673713202\tnull\n2020-11-13 00:00:00.0\t5.159055299214529\tnull\n2020-11-14 00:00:00.0\t4.189654742026425\tnull\n2020-11-15 00:00:00.0\t5.3230099791384085\tnull\n2020-11-16 00:00:00.0\t5.429345628954441\tnull\n2020-11-17 00:00:00.0\t5.3612921657094255\tnull\n2020-11-18 00:00:00.0\t5.493061443340548\tnull\n2020-11-19 00:00:00.0\t5.53338948872752\tnull\n2020-11-20 00:00:00.0\t5.225746673713202\tnull\n2020-11-21 00:00:00.0\t4.941642422609304\tnull\n2020-11-22 00:00:00.0\t5.313205979041787\tnull\n2020-11-23 00:00:00.0\t5.641907070938114\tnull\n2020-11-24 00:00:00.0\t5.225746673713202\tnull\n2020-11-25 00:00:00.0\t5.3471075307174685\tnull\n2020-11-26 00:00:00.0\t5.375278407684165\tnull\n2020-11-27 00:00:00.0\t4.812184355372417\tnull\n2020-11-28 00:00:00.0\t4.795790545596741\tnull\n2020-11-29 00:00:00.0\t5.605802066295998\tnull\n2020-11-30 00:00:00.0\t5.062595033026967\tnull\n2020-12-01 00:00:00.0\t5.488937726156687\tnull\n2020-12-02 00:00:00.0\t5.308267697401205\tnull\n2020-12-03 00:00:00.0\t4.77912349311153\tnull\n2020-12-04 00:00:00.0\tnull\tnull\n2020-12-05 00:00:00.0\t5.459585514144159\tnull\n2020-12-06 00:00:00.0\t5.455321115357702\tnull\n2020-12-07 00:00:00.0\t5.3471075307174685\tnull\n2020-12-08 00:00:00.0\t5.298317366548036\tnull\n2020-12-09 00:00:00.0\t4.90527477843843\tnull\n2020-12-10 00:00:00.0\t5.308267697401205\tnull\n2020-12-11 00:00:00.0\t4.143134726391533\tnull\n2020-12-12 00:00:00.0\t4.727387818712341\tnull\n2020-12-13 00:00:00.0\t5.697093486505405\tnull\n2020-12-14 00:00:00.0\t5.25227342804663\tnull\n2020-12-15 00:00:00.0\t5.455321115357702\tnull\n2020-12-16 00:00:00.0\t5.342334251964811\tnull\n2020-12-17 00:00:00.0\t5.37989735354046\tnull\n2020-12-18 00:00:00.0\t5.493061443340548\tnull\n2020-12-19 00:00:00.0\t4.0943445622221\tnull\n2020-12-20 00:00:00.0\t4.912654885736052\tnull\n2020-12-21 00:00:00.0\t5.278114659230517\tnull\n2020-12-22 00:00:00.0\t5.176149732573829\tnull\n2020-12-23 00:00:00.0\t5.493061443340548\tnull\n2020-12-24 00:00:00.0\t5.402677381872279\tnull\n2020-12-25 00:00:00.0\t5.043425116919247\tnull\n2020-12-26 00:00:00.0\t4.330733340286331\tnull\n2020-12-27 00:00:00.0\t5.030437921392435\tnull\n2020-12-28 00:00:00.0\t5.484796933490655\tnull\n2020-12-29 00:00:00.0\t4.248495242049359\tnull\n2020-12-30 00:00:00.0\t4.007333185232471\tnull\n2020-12-31 00:00:00.0\t4.795790545596741\tnull\n2021-01-01 00:00:00.0\tnull\tnull\n2021-01-02 00:00:00.0\tnull\tnull\n2021-01-03 00:00:00.0\tnull\tnull\n2021-01-04 00:00:00.0\t7.3031700512368\tnull\n2021-01-05 00:00:00.0\t4.543294782270004\tnull\n2021-01-06 00:00:00.0\tnull\tnull\n2021-01-07 00:00:00.0\t4.624972813284271\tnull\n2021-01-08 00:00:00.0\t4.8283137373023015\tnull\n2021-01-09 00:00:00.0\t4.219507705176107\tnull\n2021-01-10 00:00:00.0\t4.48863636973214\tnull\n2021-01-11 00:00:00.0\t3.8918202981106265\tnull\n2021-01-12 00:00:00.0\t3.828641396489095\tnull\n2021-01-13 00:00:00.0\tnull\tnull\n2021-01-14 00:00:00.0\t5.25227342804663\tnull\n2021-01-15 00:00:00.0\t4.02535169073515\tnull\n2021-01-16 00:00:00.0\t4.672828834461906\tnull\n2021-01-17 00:00:00.0\t3.828641396489095\tnull\n2021-01-18 00:00:00.0\t4.356708826689592\tnull\n2021-01-19 00:00:00.0\t4.3694478524670215\tnull\n2021-01-20 00:00:00.0\t4.919980925828125\tnull\n2021-01-21 00:00:00.0\t4.8283137373023015\tnull\n2021-01-22 00:00:00.0\t4.382026634673881\tnull\n2021-01-23 00:00:00.0\t4.330733340286331\tnull\n2021-01-24 00:00:00.0\t3.58351893845611\tnull\n2021-01-25 00:00:00.0\t4.343805421853684\tnull\n2021-01-26 00:00:00.0\t4.356708826689592\tnull\n2021-01-27 00:00:00.0\t4.6443908991413725\tnull\n2021-01-28 00:00:00.0\t3.6109179126442243\tnull\n2021-01-29 00:00:00.0\t3.871201010907891\tnull\n2021-01-30 00:00:00.0\t4.23410650459726\tnull\n2021-01-31 00:00:00.0\t2.70805020110221\tnull\n2021-02-01 00:00:00.0\t3.58351893845611\tnull\n2021-02-02 00:00:00.0\t4.127134385045092\tnull\n2021-02-03 00:00:00.0\t3.970291913552122\tnull\n2021-02-04 00:00:00.0\t4.04305126783455\tnull\n2021-02-05 00:00:00.0\t3.5263605246161616\tnull\n2021-02-06 00:00:00.0\t4.174387269895637\tnull\n2021-02-07 00:00:00.0\t1.6094379124341003\tnull\n2021-02-08 00:00:00.0\t3.1780538303479458\tnull\n2021-02-09 00:00:00.0\t3.2188758248682006\tnull\n2021-02-10 00:00:00.0\t2.8903717578961645\tnull\n2021-02-11 00:00:00.0\t2.8903717578961645\tnull\n2021-02-12 00:00:00.0\t3.2188758248682006\tnull\n2021-02-13 00:00:00.0\t3.332204510175204\tnull\n2021-02-14 00:00:00.0\t2.9444389791664403\tnull\n2021-02-15 00:00:00.0\t3.091042453358316\tnull\n2021-02-16 00:00:00.0\t1.3862943611198906\tnull\n2021-02-17 00:00:00.0\t3.091042453358316\tnull\n2021-02-18 00:00:00.0\t2.833213344056216\tnull\n2021-02-19 00:00:00.0\t2.8903717578961645\tnull\n2021-02-20 00:00:00.0\t1.6094379124341003\tnull\n2021-02-21 00:00:00.0\t3.1780538303479458\tnull\n2021-02-22 00:00:00.0\t2.5649493574615367\tnull\n2021-02-23 00:00:00.0\t3.367295829986474\tnull\n2021-02-24 00:00:00.0\t2.8903717578961645\tnull\n2021-02-25 00:00:00.0\t2.772588722239781\tnull\n2021-02-26 00:00:00.0\t2.772588722239781\tnull\n2021-02-27 00:00:00.0\t2.3978952727983707\tnull\n2021-02-28 00:00:00.0\t1.9459101490553132\tnull\n2021-03-01 00:00:00.0\t2.9444389791664403\tnull\n2021-03-02 00:00:00.0\t3.258096538021482\tnull\n2021-03-03 00:00:00.0\t2.3978952727983707\tnull\n2021-03-04 00:00:00.0\t1.6094379124341003\tnull\n2021-03-05 00:00:00.0\t3.9512437185814275\tnull\n2021-03-06 00:00:00.0\t2.5649493574615367\tnull\n2021-03-07 00:00:00.0\t1.9459101490553132\tnull\n2021-03-08 00:00:00.0\t3.367295829986474\tnull\n2021-03-09 00:00:00.0\tnull\tnull\n2021-03-10 00:00:00.0\t2.8903717578961645\tnull\n2021-03-11 00:00:00.0\t3.1354942159291497\tnull\n2021-03-12 00:00:00.0\t3.7376696182833684\tnull\n2021-03-13 00:00:00.0\tnull\tnull\n2021-03-14 00:00:00.0\t3.258096538021482\tnull\n2021-03-15 00:00:00.0\tnull\tnull\n2021-03-16 00:00:00.0\t2.302585092994046\tnull\n2021-03-17 00:00:00.0\t3.044522437723423\tnull\n2021-03-18 00:00:00.0\t3.332204510175204\tnull\n2021-03-19 00:00:00.0\t3.2188758248682006\tnull\n2021-03-20 00:00:00.0\t3.1780538303479458\tnull\n2021-03-21 00:00:00.0\t2.302585092994046\tnull\n2021-03-22 00:00:00.0\t3.912023005428146\tnull\n2021-03-23 00:00:00.0\t3.1780538303479458\tnull\n2021-03-24 00:00:00.0\t2.70805020110221\tnull\n2021-03-25 00:00:00.0\t3.5263605246161616\tnull\n2021-03-26 00:00:00.0\t3.332204510175204\tnull\n2021-03-27 00:00:00.0\t3.58351893845611\tnull\n2021-03-28 00:00:00.0\t1.3862943611198906\tnull\n2021-03-29 00:00:00.0\t3.332204510175204\tnull\n2021-03-30 00:00:00.0\t4.127134385045092\tnull\n2021-03-31 00:00:00.0\t4.248495242049359\tnull\n2021-04-01 00:00:00.0\t4.143134726391533\tnull\n2021-04-02 00:00:00.0\t4.007333185232471\tnull\n2021-04-03 00:00:00.0\t3.1354942159291497\tnull\n2021-04-04 00:00:00.0\t4.394449154672439\tnull\n2021-04-05 00:00:00.0\t3.713572066704308\tnull\n2021-04-06 00:00:00.0\t4.127134385045092\tnull\n2021-04-07 00:00:00.0\t4.543294782270004\tnull\n2021-04-08 00:00:00.0\t4.248495242049359\tnull\n2021-04-09 00:00:00.0\t4.330733340286331\tnull\n2021-04-10 00:00:00.0\t4.8283137373023015\tnull\n2021-04-11 00:00:00.0\t2.772588722239781\tnull\n2021-04-12 00:00:00.0\t4.406719247264253\tnull\n2021-04-13 00:00:00.0\t4.804021044733257\tnull\n2021-04-14 00:00:00.0\t4.852030263919617\tnull\n2021-04-15 00:00:00.0\t3.7376696182833684\tnull\n2021-04-16 00:00:00.0\t4.356708826689592\tnull\n2021-04-17 00:00:00.0\t4.6913478822291435\tnull\n2021-04-18 00:00:00.0\t4.276666119016055\tnull\n2021-04-19 00:00:00.0\t4.653960350157523\tnull\n2021-04-20 00:00:00.0\t4.9344739331306915\tnull\n2021-04-21 00:00:00.0\t5.176149732573829\tnull\n2021-04-22 00:00:00.0\t4.584967478670572\tnull\n2021-04-23 00:00:00.0\t5.438079308923196\tnull\n2021-04-24 00:00:00.0\t5.236441962829949\tnull\n2021-04-25 00:00:00.0\t4.727387818712341\tnull\n2021-04-26 00:00:00.0\t5.147494476813453\tnull\n2021-04-27 00:00:00.0\t5.3471075307174685\tnull\n2021-04-28 00:00:00.0\t4.976733742420574\tnull\n2021-04-29 00:00:00.0\t5.327876168789581\tnull\n2021-04-30 00:00:00.0\t5.1298987149230735\tnull\n2021-05-01 00:00:00.0\t5.267858159063328\tnull\n2021-05-02 00:00:00.0\t5.209486152841421\tnull\n2021-05-03 00:00:00.0\t5.181783550292085\tnull\n2021-05-04 00:00:00.0\t5.572154032177765\tnull\n2021-05-05 00:00:00.0\t5.455321115357702\tnull\n2021-05-06 00:00:00.0\t5.8998973535824915\tnull\n2021-05-07 00:00:00.0\t5.680172609017068\tnull\n2021-05-08 00:00:00.0\t5.703782474656201\tnull\n2021-05-09 00:00:00.0\t4.465908118654584\tnull\n2021-05-10 00:00:00.0\t5.3981627015177525\tnull\n2021-05-11 00:00:00.0\t5.8289456176102075\tnull\n2021-05-12 00:00:00.0\t5.752572638825633\tnull\n2021-05-13 00:00:00.0\t5.7899601708972535\tnull\n2021-05-14 00:00:00.0\t5.736572297479192\tnull\n2021-05-15 00:00:00.0\t4.04305126783455\tnull\n2021-05-16 00:00:00.0\t4.276666119016055\tnull\n2021-05-17 00:00:00.0\t4.736198448394496\tnull\n2021-05-18 00:00:00.0\t5.3981627015177525\tnull\n2021-05-19 00:00:00.0\t5.713732805509369\tnull\n2021-05-20 00:00:00.0\t6.115892125483034\tnull\n2021-05-21 00:00:00.0\t6.22455842927536\tnull\n2021-05-22 00:00:00.0\t6.0063531596017325\tnull\n2021-05-23 00:00:00.0\t5.488937726156687\tnull\n2021-05-24 00:00:00.0\t6.304448802421981\tnull\n2021-05-25 00:00:00.0\t6.4425401664681985\tnull\n2021-05-26 00:00:00.0\t6.733401891837359\tnull\n2021-05-27 00:00:00.0\t6.434546518787453\t7.958227192322312\n2021-05-28 00:00:00.0\t6.638567789166521\tnull\n2021-05-29 00:00:00.0\t6.8885724595653635\tnull\n2021-05-30 00:00:00.0\t6.476972362889683\tnull\n2021-05-31 00:00:00.0\t6.981934677156389\tnull\n2021-06-01 00:00:00.0\t7.037905963447182\tnull\n2021-06-02 00:00:00.0\t6.955592608396297\tnull\n2021-06-03 00:00:00.0\t6.996681488176539\t8.297792626380861\n2021-06-04 00:00:00.0\t7.319202458767849\tnull\n2021-06-05 00:00:00.0\t7.19668657083435\tnull\n2021-06-06 00:00:00.0\t7.13966033596492\tnull\n2021-06-07 00:00:00.0\t7.388327859577107\tnull\n2021-06-08 00:00:00.0\t7.3031700512368\tnull\n2021-06-09 00:00:00.0\t7.452402451223638\tnull\n2021-06-10 00:00:00.0\t7.518607216815252\tnull\n2021-06-11 00:00:00.0\t7.508787170634276\tnull\n2021-06-12 00:00:00.0\t6.931471805599453\tnull\n2021-06-13 00:00:00.0\t7.02197642307216\tnull\n2021-06-14 00:00:00.0\t7.3758821482150125\tnull\n2021-06-15 00:00:00.0\t7.503289630675082\tnull\n2021-06-16 00:00:00.0\t2.772588722239781\tnull\n2021-06-17 00:00:00.0\t8.084254106307318\tnull\n2021-06-18 00:00:00.0\t7.697575346802343\tnull\n2021-06-19 00:00:00.0\tnull\tnull\n2021-06-20 00:00:00.0\tnull\tnull\n2021-06-21 00:00:00.0\t8.550241045462437\tnull\n2021-06-22 00:00:00.0\t7.52131798019924\tnull\n2021-06-23 00:00:00.0\t7.699842407396986\tnull\n2021-06-24 00:00:00.0\t7.362010551259734\tnull\n2021-06-25 00:00:00.0\t7.630461261783627\tnull\n2021-06-26 00:00:00.0\tnull\tnull\n2021-06-27 00:00:00.0\tnull\tnull\n2021-06-28 00:00:00.0\t8.33302993974291\tnull\n2021-06-29 00:00:00.0\t7.249215057114389\tnull\n2021-06-30 00:00:00.0\t7.313886831633462\tnull\n2021-07-01 00:00:00.0\t7.350516171833998\tnull\n2021-07-02 00:00:00.0\tnull\tnull\n2021-07-03 00:00:00.0\tnull\tnull\n2021-07-04 00:00:00.0\tnull\tnull\n2021-07-05 00:00:00.0\t8.651898894268529\tnull\n2021-07-06 00:00:00.0\t7.3310603052186325\tnull\n2021-07-07 00:00:00.0\t7.350516171833998\tnull\n2021-07-08 00:00:00.0\t6.9957661563048505\tnull\n2021-07-09 00:00:00.0\t7.29505641646263\tnull\n2021-07-10 00:00:00.0\tnull\tnull\n2021-07-11 00:00:00.0\tnull\tnull\n2021-07-12 00:00:00.0\t8.028455164114252\tnull\n2021-07-13 00:00:00.0\tnull\tnull\n2021-07-14 00:00:00.0\t7.595889917718538\tnull\n2021-07-15 00:00:00.0\t7.098375638590786\tnull\n2021-07-16 00:00:00.0\tnull\tnull\n2021-07-17 00:00:00.0\tnull\tnull\n2021-07-18 00:00:00.0\tnull\tnull\n2021-07-19 00:00:00.0\t8.19863945529737\tnull\n2021-07-20 00:00:00.0\t6.829793737512425\tnull\n2021-07-21 00:00:00.0\tnull\tnull\n2021-07-22 00:00:00.0\t6.645090969505644\tnull\n2021-07-23 00:00:00.0\t5.545177444479562\tnull\n2021-07-24 00:00:00.0\tnull\tnull\n2020-02-13 00:00:00.0\tnull\tnull\n2020-02-14 00:00:00.0\t0.0\tnull\n2020-02-15 00:00:00.0\tnull\tnull\n2020-02-16 00:00:00.0\tnull\tnull\n2020-02-17 00:00:00.0\tnull\tnull\n2020-02-18 00:00:00.0\tnull\tnull\n2020-02-19 00:00:00.0\tnull\tnull\n2020-02-20 00:00:00.0\tnull\tnull\n2020-02-21 00:00:00.0\tnull\tnull\n2020-02-22 00:00:00.0\tnull\tnull\n2020-02-23 00:00:00.0\tnull\tnull\n2020-02-24 00:00:00.0\tnull\tnull\n2020-02-25 00:00:00.0\t0.0\tnull\n2020-02-26 00:00:00.0\tnull\tnull\n2020-02-27 00:00:00.0\tnull\tnull\n2020-02-28 00:00:00.0\t0.0\tnull\n2020-02-29 00:00:00.0\tnull\tnull\n2020-03-01 00:00:00.0\t0.0\tnull\n2020-03-02 00:00:00.0\t1.3862943611198906\tnull\n2020-03-03 00:00:00.0\t1.0986122886681098\tnull\n2020-03-04 00:00:00.0\t2.302585092994046\tnull\n2020-03-05 00:00:00.0\t1.0986122886681098\tnull\n2020-03-06 00:00:00.0\t2.9444389791664403\tnull\n2020-03-07 00:00:00.0\tnull\tnull\n2020-03-08 00:00:00.0\t3.6888794541139363\tnull\n2020-03-09 00:00:00.0\t2.0794415416798357\tnull\n2020-03-10 00:00:00.0\t2.5649493574615367\tnull\n2020-03-11 00:00:00.0\t2.6390573296152584\tnull\n2020-03-12 00:00:00.0\t2.772588722239781\tnull\n2020-03-13 00:00:00.0\t3.7376696182833684\tnull\n2020-03-14 00:00:00.0\t4.356708826689592\tnull\n2020-03-15 00:00:00.0\t4.07753744390572\tnull\n2020-03-16 00:00:00.0\t4.465908118654584\tnull\n2020-03-17 00:00:00.0\t4.430816798843313\tnull\n2020-03-18 00:00:00.0\t4.7535901911063645\tnull\n2020-03-19 00:00:00.0\t5.19295685089021\tnull\n2020-03-20 00:00:00.0\t5.236441962829949\tnull\n2020-03-21 00:00:00.0\t5.318119993844216\tnull\n2020-03-22 00:00:00.0\t5.579729825986222\tnull\n2020-03-23 00:00:00.0\t5.942799375126701\tnull\n2020-03-24 00:00:00.0\t6.068425588244111\tnull\n2020-03-25 00:00:00.0\t6.259581464064923\tnull\n2020-03-26 00:00:00.0\t6.315358001522335\tnull\n2020-03-27 00:00:00.0\t6.326149473155099\tnull\n2020-03-28 00:00:00.0\t5.8289456176102075\tnull\n2020-03-29 00:00:00.0\t6.327936783729195\tnull\n2020-03-30 00:00:00.0\t6.018593214496234\tnull\n2020-03-31 00:00:00.0\t6.371611847231857\tnull\n2020-04-01 00:00:00.0\t6.395261598115449\tnull\n2020-04-02 00:00:00.0\t6.478509642208569\tnull\n2020-04-03 00:00:00.0\t6.782192056006791\tnull\n2020-04-04 00:00:00.0\t6.520621127558696\tnull\n2020-04-05 00:00:00.0\t6.559615237493242\tnull\n2020-04-06 00:00:00.0\t6.55250788703459\tnull\n2020-04-07 00:00:00.0\t6.450470422144176\tnull\n2020-04-08 00:00:00.0\t6.6895992691789665\tnull\n2020-04-09 00:00:00.0\t6.699500340161678\tnull\n2020-04-10 00:00:00.0\t6.4967749901858625\tnull\n2020-04-11 00:00:00.0\t6.573680166960646\tnull\n2020-04-12 00:00:00.0\t6.761572768804055\tnull\n2020-04-13 00:00:00.0\t6.651571873589727\tnull\n2020-04-14 00:00:00.0\t6.877296071497429\tnull\n2020-04-15 00:00:00.0\t6.863803391452954\tnull\n2020-04-16 00:00:00.0\t7.0630481633881725\tnull\n2020-04-17 00:00:00.0\t7.2485040723706105\tnull\n2020-04-18 00:00:00.0\t7.174724309836376\tnull\n2020-04-19 00:00:00.0\t7.097548850614793\tnull\n2020-04-20 00:00:00.0\t7.05444965813294\tnull\n2020-04-21 00:00:00.0\t6.975413927455952\tnull\n2020-04-22 00:00:00.0\t7.2456550675945355\tnull\n2020-04-23 00:00:00.0\t7.271008538280992\tnull\n2020-04-24 00:00:00.0\t7.449498005382849\tnull\n2020-04-25 00:00:00.0\t7.115582126184454\tnull\n2020-04-26 00:00:00.0\t7.335633981927201\tnull\n2020-04-27 00:00:00.0\t7.195937226475569\tnull\n2020-04-28 00:00:00.0\t7.394493107219038\tnull\n2020-04-29 00:00:00.0\t7.607381425639791\tnull\n2020-04-30 00:00:00.0\t7.57353126274595\tnull\n2020-05-01 00:00:00.0\t7.453561871643373\tnull\n2020-05-02 00:00:00.0\t7.708859601047175\tnull\n2020-05-03 00:00:00.0\t7.374001859350161\tnull\n2020-05-04 00:00:00.0\t7.885329239273191\tnull\n2020-05-05 00:00:00.0\t7.61972421378267\tnull\n2020-05-06 00:00:00.0\t7.842278779117352\tnull\n2020-05-07 00:00:00.0\t7.820037989458753\tnull\n2020-05-08 00:00:00.0\t8.19533366716287\tnull\n2020-05-09 00:00:00.0\t7.955074273262696\tnull\n2020-05-10 00:00:00.0\t7.8551570058813445\tnull\n2020-05-11 00:00:00.0\t8.028129059431759\tnull\n2020-05-12 00:00:00.0\t8.058327306580958\tnull\n2020-05-13 00:00:00.0\t7.977625098784593\tnull\n2020-05-14 00:00:00.0\t8.045267716607803\tnull\n2020-05-15 00:00:00.0\t7.982074875081202\tnull\n2020-05-16 00:00:00.0\t8.00736706798333\tnull\n2020-05-17 00:00:00.0\t8.105609402299896\tnull\n2020-05-18 00:00:00.0\t8.207401833376355\tnull\n2020-05-19 00:00:00.0\t8.010359588919783\tnull\n2020-05-20 00:00:00.0\t8.240648863374913\tnull\n2020-05-21 00:00:00.0\t8.453614209773367\tnull\n2020-05-22 00:00:00.0\t8.262300941787448\tnull\n2020-05-23 00:00:00.0\t8.258940462988459\tnull\n2020-05-24 00:00:00.0\t8.325063693631197\tnull\n2020-05-25 00:00:00.0\t8.32263709695394\tnull\n2020-05-26 00:00:00.0\t8.21932609390609\tnull\n2020-05-27 00:00:00.0\t8.532869670801245\tnull\n2020-05-28 00:00:00.0\t8.50086053679534\tnull\n2020-05-29 00:00:00.0\t8.656607247198915\tnull\n2020-05-30 00:00:00.0\t8.719317375506371\tnull\n2020-05-31 00:00:00.0\t8.565602330623925\tnull\n2020-06-01 00:00:00.0\t8.663023639627777\tnull\n2020-06-02 00:00:00.0\t8.493924564476883\tnull\n2020-06-03 00:00:00.0\t8.534443544822764\tnull\n2020-06-04 00:00:00.0\t8.868694776580972\tnull\n2020-06-05 00:00:00.0\t8.881280595070423\tnull\n2020-06-06 00:00:00.0\t8.794067065151415\tnull\n2020-06-07 00:00:00.0\t8.754160749323518\tnull\n2020-06-08 00:00:00.0\t8.802071336535285\tnull\n2020-06-09 00:00:00.0\t8.775240458738327\tnull\n2020-06-10 00:00:00.0\t8.786609455061125\tnull\n2020-06-11 00:00:00.0\t8.909505512946101\tnull\n2020-06-12 00:00:00.0\t8.996775795442296\tnull\n2020-06-13 00:00:00.0\t8.999742789830492\tnull\n2020-06-14 00:00:00.0\t9.078749951588586\tnull\n2020-06-15 00:00:00.0\t9.171703488361265\tnull\n2020-06-16 00:00:00.0\t8.937612591306213\tnull\n2020-06-17 00:00:00.0\t9.074749717669835\tnull\n2020-06-18 00:00:00.0\t9.018453210312527\tnull\n2020-06-19 00:00:00.0\t9.192787212728593\tnull\n2020-06-20 00:00:00.0\t9.335209354022052\tnull\n2020-06-21 00:00:00.0\t9.152923101106232\tnull\n2020-06-22 00:00:00.0\t9.103756886573398\tnull\n2020-06-23 00:00:00.0\t9.11063052782717\tnull\n2020-06-24 00:00:00.0\t9.337677620437377\tnull\n2020-06-25 00:00:00.0\t9.388486557359657\tnull\n2020-06-26 00:00:00.0\t9.356775650205728\tnull\n2020-06-27 00:00:00.0\t9.416052881560713\tnull\n2020-06-28 00:00:00.0\t9.273033441314606\tnull\n2020-06-29 00:00:00.0\t9.310004695089129\tnull\n2020-06-30 00:00:00.0\t9.360138737064577\tnull\n2020-07-01 00:00:00.0\t9.490015474026047\tnull\n2020-07-02 00:00:00.0\t9.560504164299259\tnull\n2020-07-03 00:00:00.0\t9.626349693960018\tnull\n2020-07-04 00:00:00.0\t9.64904681386415\tnull\n2020-07-05 00:00:00.0\t9.520761931397454\tnull\n2020-07-06 00:00:00.0\t9.526391218478407\tnull\n2020-07-07 00:00:00.0\t9.76846934085804\tnull\n2020-07-08 00:00:00.0\t9.597369917928662\tnull\n2020-07-09 00:00:00.0\t9.863290362784715\tnull\n2020-07-10 00:00:00.0\t9.780189336191635\tnull\n2020-07-11 00:00:00.0\t9.842409703027538\tnull\n2020-07-12 00:00:00.0\t9.722804652410682\tnull\n2020-07-13 00:00:00.0\t9.68477168454907\tnull\n2020-07-14 00:00:00.0\t9.577411092097035\tnull\n2020-07-15 00:00:00.0\t9.800956363888462\tnull\n2020-07-16 00:00:00.0\t9.925297966799977\tnull\n2020-07-17 00:00:00.0\t9.880218925596774\tnull\n2020-07-18 00:00:00.0\t9.85298342036236\tnull\n2020-07-19 00:00:00.0\t9.828440678213218\tnull\n2020-07-20 00:00:00.0\t9.65020690680168\tnull\n2020-07-21 00:00:00.0\t9.537050831395442\tnull\n2020-07-22 00:00:00.0\t9.883998875952265\tnull\n2020-07-23 00:00:00.0\t9.823740634445873\tnull\n2020-07-24 00:00:00.0\t10.003830501232155\tnull\n2020-07-25 00:00:00.0\t9.806480934593978\tnull\n2020-07-26 00:00:00.0\t9.815475675212914\tnull\n2020-07-27 00:00:00.0\t9.505097358099926\tnull\n2020-07-28 00:00:00.0\t9.510370887608827\tnull\n2020-07-29 00:00:00.0\t9.778037701818713\tnull\n2020-07-30 00:00:00.0\t9.764627703152708\tnull\n2020-07-31 00:00:00.0\t9.85245738142335\tnull\n2020-08-01 00:00:00.0\t9.736251633160215\tnull\n2020-08-02 00:00:00.0\t9.453208116138121\tnull\n2020-08-03 00:00:00.0\t9.292196818446016\tnull\n2020-08-04 00:00:00.0\t9.201804040953895\tnull\n2020-08-05 00:00:00.0\t9.640433049909078\tnull\n2020-08-06 00:00:00.0\t9.569970943740548\tnull\n2020-08-07 00:00:00.0\t9.50985219618154\tnull\n2020-08-08 00:00:00.0\t9.56156046523195\tnull\n2020-08-09 00:00:00.0\t9.421897054038473\tnull\n2020-08-10 00:00:00.0\t9.119540007649686\tnull\n2020-08-11 00:00:00.0\t8.972463821059907\tnull\n2020-08-12 00:00:00.0\t9.133243321591216\tnull\n2020-08-13 00:00:00.0\t9.248887781588422\tnull\n2020-08-14 00:00:00.0\t9.437077458800523\tnull\n2020-08-15 00:00:00.0\t9.377125189621008\tnull\n2020-08-16 00:00:00.0\t9.205629292246064\tnull\n2020-08-17 00:00:00.0\t9.090655529030203\tnull\n2020-08-18 00:00:00.0\t9.063810579280286\tnull\n2020-08-19 00:00:00.0\t9.29605924737872\tnull\n2020-08-20 00:00:00.0\t9.269457976459272\tnull\n2020-08-21 00:00:00.0\t9.237177025929743\tnull\n2020-08-22 00:00:00.0\t9.25272913846797\tnull\n2020-08-23 00:00:00.0\t9.11085147347544\tnull\n2020-08-24 00:00:00.0\t8.924789360533357\tnull\n2020-08-25 00:00:00.0\t8.928375259853631\tnull\n2020-08-26 00:00:00.0\t9.088737550216933\tnull\n2020-08-27 00:00:00.0\t9.054271186326293\tnull\n2020-08-28 00:00:00.0\t9.000729834944558\tnull\n2020-08-29 00:00:00.0\t9.032409163483521\tnull\n2020-08-30 00:00:00.0\t9.042749779782222\tnull\n2020-08-31 00:00:00.0\t8.825412915085566\tnull\n2020-09-01 00:00:00.0\t8.875846177738598\tnull\n2020-09-02 00:00:00.0\t9.072686206677387\tnull\n2020-09-03 00:00:00.0\t8.955060950631902\tnull\n2020-09-04 00:00:00.0\t9.056956065076825\tnull\n2020-09-05 00:00:00.0\t8.90815361332152\tnull\n2020-09-06 00:00:00.0\t8.96482339168508\tnull\n2020-09-07 00:00:00.0\t8.83579236650274\tnull\n2020-09-08 00:00:00.0\t8.946244609330543\tnull\n2020-09-09 00:00:00.0\t9.023408202624545\tnull\n2020-09-10 00:00:00.0\t8.99342737041261\tnull\n2020-09-11 00:00:00.0\t9.07015834137632\tnull\n2020-09-12 00:00:00.0\t8.910585718290132\tnull\n2020-09-13 00:00:00.0\t8.817001443665859\tnull\n2020-09-14 00:00:00.0\t8.776938645174996\tnull\n2020-09-15 00:00:00.0\t8.789660098061537\tnull\n2020-09-16 00:00:00.0\t8.896998552743824\tnull\n2020-09-17 00:00:00.0\t9.06009870864564\tnull\n2020-09-18 00:00:00.0\t9.007121989469242\tnull\n2020-09-19 00:00:00.0\t9.074176947163311\tnull\n2020-09-20 00:00:00.0\t9.038246335337664\tnull\n2020-09-21 00:00:00.0\t8.723882104658486\tnull\n2020-09-22 00:00:00.0\t8.830396801098097\tnull\n2020-09-23 00:00:00.0\t9.074176947163311\tnull\n2020-09-24 00:00:00.0\t9.010180657052349\tnull\n2020-09-25 00:00:00.0\t8.984317679911129\tnull\n2020-09-26 00:00:00.0\t8.765614549914716\tnull\n2020-09-27 00:00:00.0\t9.032289682032873\tnull\n2020-09-28 00:00:00.0\t8.642768014324304\tnull\n2020-09-29 00:00:00.0\t8.923857580099885\tnull\n2020-09-30 00:00:00.0\t9.040026434306505\tnull\n2020-10-01 00:00:00.0\t8.890135107818843\tnull\n2020-10-02 00:00:00.0\t9.088963385809583\tnull\n2020-10-03 00:00:00.0\t9.085910293598007\tnull\n2020-10-04 00:00:00.0\t8.997889450200717\tnull\n2020-10-05 00:00:00.0\t8.458292083496076\tnull\n2020-10-06 00:00:00.0\t8.794370279222871\tnull\n2020-10-07 00:00:00.0\t9.26321741157695\tnull\n2020-10-08 00:00:00.0\t9.297251743965479\tnull\n2020-10-09 00:00:00.0\t9.054504940418054\tnull\n2020-10-10 00:00:00.0\t9.51296031679217\tnull\n2020-10-11 00:00:00.0\t9.10219821335648\tnull\n2020-10-12 00:00:00.0\t8.68050180902826\tnull\n2020-10-13 00:00:00.0\t8.966228514225776\tnull\n2020-10-14 00:00:00.0\t9.35079772467144\tnull\n2020-10-15 00:00:00.0\t9.117786390365575\tnull\n2020-10-16 00:00:00.0\t9.276689752517717\tnull\n2020-10-17 00:00:00.0\t9.565353936588249\tnull\n2020-10-18 00:00:00.0\t9.011035410141815\tnull\n2020-10-19 00:00:00.0\t9.178643285232928\tnull\n2020-10-20 00:00:00.0\t9.187685681411377\tnull\n2020-10-21 00:00:00.0\t9.257033099968165\tnull\n2020-10-22 00:00:00.0\t9.302919553269277\tnull\n2020-10-23 00:00:00.0\t9.252920819511301\tnull\n2020-10-24 00:00:00.0\t9.370671910878523\tnull\n2020-10-25 00:00:00.0\t9.115370134384955\tnull\n2020-10-26 00:00:00.0\t9.279679850054796\tnull\n2020-10-27 00:00:00.0\t9.065314599925925\tnull\n2020-10-28 00:00:00.0\t9.38429367909962\tnull\n2020-10-29 00:00:00.0\t9.312084355859467\tnull\n2020-10-30 00:00:00.0\t9.517751539608959\tnull\n2020-10-31 00:00:00.0\t9.312355297382913\tnull\n2020-11-01 00:00:00.0\t9.239510749275963\tnull\n2020-11-02 00:00:00.0\t8.934059722248843\tnull\n2020-11-03 00:00:00.0\t9.294129897705867\tnull\n2020-11-04 00:00:00.0\t9.546955455537143\tnull\n2020-11-05 00:00:00.0\t9.641668139610074\tnull\n2020-11-06 00:00:00.0\t9.369052063131004\tnull\n2020-11-07 00:00:00.0\t9.61693817168028\tnull\n2020-11-08 00:00:00.0\t9.433323910489028\tnull\n2020-11-09 00:00:00.0\t9.092569836241674\tnull\n2020-11-10 00:00:00.0\t9.485924559229828\tnull\n2020-11-11 00:00:00.0\t9.546812608597396\tnull\n2020-11-12 00:00:00.0\t9.666561963748133\tnull\n2020-11-13 00:00:00.0\t9.594105053105007\tnull\n2020-11-14 00:00:00.0\t9.551871220788255\tnull\n2020-11-15 00:00:00.0\t9.439068301584292\tnull\n2020-11-16 00:00:00.0\t9.240287448344136\tnull\n2020-11-17 00:00:00.0\t9.462498888358917\tnull\n2020-11-18 00:00:00.0\t9.635673464721814\tnull\n2020-11-19 00:00:00.0\t9.542087175590064\tnull\n2020-11-20 00:00:00.0\t9.663515696240424\tnull\n2020-11-21 00:00:00.0\t9.499721001063545\tnull\n2020-11-22 00:00:00.0\t9.455558477608703\tnull\n2020-11-23 00:00:00.0\t9.218010878280403\tnull\n2020-11-24 00:00:00.0\t9.433723894495\tnull\n2020-11-25 00:00:00.0\t9.593355351246755\tnull\n2020-11-26 00:00:00.0\t9.541297427909285\tnull\n2020-11-27 00:00:00.0\t9.682778535337379\tnull\n2020-11-28 00:00:00.0\t9.502711433914095\tnull\n2020-11-29 00:00:00.0\t9.478151314785551\tnull\n2020-11-30 00:00:00.0\t9.244741798693514\tnull\n2020-12-01 00:00:00.0\t9.29081375612606\tnull\n2020-12-02 00:00:00.0\t9.705828982731935\tnull\n2020-12-03 00:00:00.0\t9.661479683575521\tnull\n2020-12-04 00:00:00.0\t9.797126536544718\tnull\n2020-12-05 00:00:00.0\t9.595738817934032\tnull\n2020-12-06 00:00:00.0\t9.507700460979235\tnull\n2020-12-07 00:00:00.0\t9.271247306879705\tnull\n2020-12-08 00:00:00.0\t9.492356422801336\tnull\n2020-12-09 00:00:00.0\t9.872822138225242\tnull\n2020-12-10 00:00:00.0\t9.859222136238113\tnull\n2020-12-11 00:00:00.0\t9.856448354530341\tnull\n2020-12-12 00:00:00.0\t9.805488761654026\tnull\n2020-12-13 00:00:00.0\t9.69412362463029\tnull\n2020-12-14 00:00:00.0\t9.334149657702469\tnull\n2020-12-15 00:00:00.0\t9.79823814181703\tnull\n2020-12-16 00:00:00.0\t9.962935011179548\tnull\n2020-12-17 00:00:00.0\t9.928570332903591\tnull\n2020-12-18 00:00:00.0\t9.86889610776651\tnull\n2020-12-19 00:00:00.0\t9.964582651895938\tnull\n2020-12-20 00:00:00.0\t9.821517989668877\tnull\n2020-12-21 00:00:00.0\t9.728002573001161\tnull\n2020-12-22 00:00:00.0\t9.902787307421734\tnull\n2020-12-23 00:00:00.0\t10.155374039382549\tnull\n2020-12-24 00:00:00.0\t10.205220448210568\tnull\n2020-12-25 00:00:00.0\t10.157548206485059\tnull\n2020-12-26 00:00:00.0\t9.97025795616998\tnull\n2020-12-27 00:00:00.0\t9.834941010001018\tnull\n2020-12-28 00:00:00.0\t9.629774129311743\tnull\n2020-12-29 00:00:00.0\t9.909867159500168\tnull\n2020-12-30 00:00:00.0\t10.329310689232171\tnull\n2020-12-31 00:00:00.0\t10.301894476832386\tnull\n2021-01-01 00:00:00.0\t10.229476459142496\tnull\n2021-01-02 00:00:00.0\t10.039721539859407\tnull\n2021-01-03 00:00:00.0\t9.998343083548807\tnull\n2021-01-04 00:00:00.0\t9.989298208949238\tnull\n2021-01-05 00:00:00.0\t10.197909361850968\tnull\n2021-01-06 00:00:00.0\t10.485479683729912\tnull\n2021-01-07 00:00:00.0\t10.474523594701102\tnull\n2021-01-08 00:00:00.0\t10.504327539810888\tnull\n2021-01-09 00:00:00.0\t10.465927919019618\tnull\n2021-01-10 00:00:00.0\t10.361133894030637\tnull\n2021-01-11 00:00:00.0\t10.241137666615815\tnull\n2021-01-12 00:00:00.0\t10.170762815210246\tnull\n2021-01-13 00:00:00.0\t10.434027564411219\tnull\n2021-01-14 00:00:00.0\t10.440799301537945\tnull\n2021-01-15 00:00:00.0\t10.360120947218691\tnull\n2021-01-16 00:00:00.0\t10.224410958767711\t8.006367567650246\n2021-01-17 00:00:00.0\t10.187500401613525\tnull\n2021-01-18 00:00:00.0\t10.02020335223209\tnull\n2021-01-19 00:00:00.0\t10.060918560484957\tnull\n2021-01-20 00:00:00.0\t10.251923650196069\t7.690286020676768\n2021-01-21 00:00:00.0\t10.235126700003637\tnull\n2021-01-22 00:00:00.0\t10.172712841637342\tnull\n2021-01-23 00:00:00.0\t10.214934978538171\t7.288244401020124\n2021-01-24 00:00:00.0\t9.909469624213676\tnull\n2021-01-25 00:00:00.0\t9.722864552377755\t7.336936913707618\n2021-01-26 00:00:00.0\t9.830809327038143\t7.945555428253489\n2021-01-27 00:00:00.0\t9.944005500839015\t7.963807953231451\n2021-01-28 00:00:00.0\t9.941746264653219\t8.068402958569699\n2021-01-29 00:00:00.0\t9.863810735383229\t7.641084249174914\n2021-01-30 00:00:00.0\t9.790430830243832\t11.42239882577067\n2021-01-31 00:00:00.0\t9.664722620318962\t10.491274217438248\n2021-02-01 00:00:00.0\t9.450223039294668\t11.270930333970657\n2021-02-02 00:00:00.0\t9.603800372956915\t10.97532798515125\n2021-02-03 00:00:00.0\t9.64614067988042\t10.859421985014835\n2021-02-04 00:00:00.0\t9.709538659501193\t10.676485114583807\n2021-02-05 00:00:00.0\t9.674514542898361\t10.942208283963632\n2021-02-06 00:00:00.0\t9.513772754519195\t10.964986239864137\n2021-02-07 00:00:00.0\t9.369393301830783\tnull\n2021-02-08 00:00:00.0\t9.3425083355536\tnull\n2021-02-09 00:00:00.0\t9.337061124755339\t11.123742087186342\n2021-02-10 00:00:00.0\t9.481740611853681\t11.809862081717386\n2021-02-11 00:00:00.0\t9.381769487603714\t11.634789052727069\n2021-02-12 00:00:00.0\t9.541225601728613\t12.455994437876988\n2021-02-13 00:00:00.0\t9.297801647746176\t12.54467475521772\n2021-02-14 00:00:00.0\t9.242323417829233\tnull\n2021-02-15 00:00:00.0\t9.199582715323222\tnull\n2021-02-16 00:00:00.0\t9.213036733523925\t12.200155171766136\n2021-02-17 00:00:00.0\t9.418735700941484\t12.110882458526424\n2021-02-18 00:00:00.0\t9.539140395148861\t11.959564505661183\n2021-02-19 00:00:00.0\t9.307376334487778\t12.255029462478927\n2021-02-20 00:00:00.0\t9.165238398063762\t11.541823855012877\n2021-02-21 00:00:00.0\t9.161150127785412\t8.610683534503575\n2021-02-22 00:00:00.0\t9.106866963499908\t11.723810182888498\n2021-02-23 00:00:00.0\t8.954156966583772\t11.594173599670746\n2021-02-24 00:00:00.0\t9.26188863385676\t12.608814047716741\n2021-02-25 00:00:00.0\t9.414994033976548\t12.547258754377607\n2021-02-26 00:00:00.0\t9.314970621054266\t12.399395960431905\n2021-02-27 00:00:00.0\t8.965845494750937\t12.148141580330849\n2021-02-28 00:00:00.0\t9.149953221961088\t8.952475967933584\n2021-03-01 00:00:00.0\t9.086249986745132\t12.291580392634769\n2021-03-02 00:00:00.0\t8.950014029534257\t11.988693696920816\n2021-03-03 00:00:00.0\t9.297251743965479\t12.051726113191732\n2021-03-04 00:00:00.0\t9.423999084079178\t11.891300254954798\n2021-03-05 00:00:00.0\t9.055906318669118\t12.380324227492979\n2021-03-06 00:00:00.0\t9.205629292246064\t12.230604269552826\n2021-03-07 00:00:00.0\t9.035391569511642\t10.614007941153417\n2021-03-08 00:00:00.0\t9.135293497653272\t12.76075054786454\n2021-03-09 00:00:00.0\t8.965590066907914\t11.852414574821017\n2021-03-10 00:00:00.0\t9.251578279992428\t12.737294837821386\n2021-03-11 00:00:00.0\t9.637632201310455\t12.14636510306789\n2021-03-12 00:00:00.0\t9.192583650386924\t12.644388864905734\n2021-03-13 00:00:00.0\t9.240772579096385\t12.908298490023324\n2021-03-14 00:00:00.0\t9.066700921774572\t9.71250862865099\n2021-03-15 00:00:00.0\t9.03741453682259\t12.881653945410097\n2021-03-16 00:00:00.0\t9.103089181229207\t12.36937701648803\n2021-03-17 00:00:00.0\t9.316590491818841\t12.214531766071808\n2021-03-18 00:00:00.0\t9.335385860950407\t12.141214073181677\n2021-03-19 00:00:00.0\t9.446281681520253\t12.55261189643723\n2021-03-20 00:00:00.0\t9.127393451155257\t11.433438436211896\n2021-03-21 00:00:00.0\t9.115370134384955\t9.978038283800425\n2021-03-22 00:00:00.0\t9.168163293076997\t11.713749784995159\n2021-03-23 00:00:00.0\t9.057888248784506\t11.89288813266597\n2021-03-24 00:00:00.0\t9.29605924737872\t13.749489338172111\n2021-03-25 00:00:00.0\t9.432683603119623\t12.572072477248573\n2021-03-26 00:00:00.0\t9.827901565579532\t12.500710470547961\n2021-03-27 00:00:00.0\t9.156412029950626\t12.694152535307163\n2021-03-28 00:00:00.0\t9.104979856318357\t12.464000159081326\n2021-03-29 00:00:00.0\t9.180602553712227\t12.268648304012654\n2021-03-30 00:00:00.0\t9.186252576447092\t12.18986704118324\n2021-03-31 00:00:00.0\t9.453443401029997\t13.130395037101461\n2021-04-01 00:00:00.0\t10.005321858417396\t12.443422803425948\n2021-04-02 00:00:00.0\t9.486304051473764\t11.943174238433905\n2021-04-03 00:00:00.0\t9.080345575359996\t11.814798862532433\n2021-04-04 00:00:00.0\t9.159362817211315\t11.065888080951105\n2021-04-05 00:00:00.0\t9.132811169466946\t11.941468875240469\n2021-04-06 00:00:00.0\t9.16701524723781\t12.734639950772321\n2021-04-07 00:00:00.0\t9.365119425763737\t12.861575070463166\n2021-04-08 00:00:00.0\t9.730858867713073\t13.510979332414358\n2021-04-09 00:00:00.0\t9.43675855582405\t11.951664149841319\n2021-04-10 00:00:00.0\t9.18204377282107\t11.98246648722985\n2021-04-11 00:00:00.0\t9.178230318057949\t11.914288839123973\n2021-04-12 00:00:00.0\t9.229063985974285\t11.602939828478998\n2021-04-13 00:00:00.0\t9.201299627324033\t11.507349950637042\n2021-04-14 00:00:00.0\t9.54108193388841\t12.797762793032508\n2021-04-15 00:00:00.0\t9.449908301704534\t11.726850657474358\n2021-04-16 00:00:00.0\t9.395075679994072\t12.333766407295071\n2021-04-17 00:00:00.0\t9.500244972781061\t12.60650176095356\n2021-04-18 00:00:00.0\t9.140347000155648\t13.249307873981914\n2021-04-19 00:00:00.0\t9.077151777732437\t12.282565984718202\n2021-04-20 00:00:00.0\t9.2213792190914\t12.021590756898878\n2021-04-21 00:00:00.0\t9.38151671766514\t12.26703603348829\n2021-04-22 00:00:00.0\t9.439784035838873\t11.555620903497847\n2021-04-23 00:00:00.0\t9.401291255468191\t12.134324195206457\n2021-04-24 00:00:00.0\t9.225524507301223\t10.915088464214607\n2021-04-25 00:00:00.0\t9.162934249578912\t11.27801293005602\n2021-04-26 00:00:00.0\t8.824236617346639\t11.503723254205429\n2021-04-27 00:00:00.0\t9.160729871422848\t12.036919996784569\n2021-04-28 00:00:00.0\t9.161570207606754\t13.87342374244874\n2021-04-29 00:00:00.0\t9.654962088618868\t11.442138127248517\n2021-04-30 00:00:00.0\t9.161045080251306\t12.00701176473192\n2021-05-01 00:00:00.0\t8.968141414126814\t11.751383153993038\n2021-05-02 00:00:00.0\t8.707648248106914\t10.94537074695815\n2021-05-03 00:00:00.0\t8.889446165318288\t12.073380900303095\n2021-05-04 00:00:00.0\t8.879193928110318\t12.598540318407686\n2021-05-05 00:00:00.0\t9.135185698375423\t12.455390637813846\n2021-05-06 00:00:00.0\t9.456418894572888\t11.980244243226975\n2021-05-07 00:00:00.0\t9.093581811365986\t13.29301544310228\n2021-05-08 00:00:00.0\t8.700680734850161\t12.439273452673941\n2021-05-09 00:00:00.0\t9.159257581746866\t13.500074892899141\n2021-05-10 00:00:00.0\t9.052867513151618\t13.042029293951659\n2021-05-11 00:00:00.0\t8.863191340690854\t12.976738582044792\n2021-05-12 00:00:00.0\t9.089640586738398\t13.892716013673171\n2021-05-13 00:00:00.0\t9.15302900526307\t12.07498968162767\n2021-05-14 00:00:00.0\t8.987321812850125\t12.186431005274885\n2021-05-15 00:00:00.0\t8.82497196556714\t12.657422112740964\n2021-05-16 00:00:00.0\t8.844192126244968\t11.441730169928077\n2021-05-17 00:00:00.0\t8.96610085736724\t13.054009587375598\n2021-05-18 00:00:00.0\t9.262268464836541\t13.560491848726901\n2021-05-19 00:00:00.0\t9.207436158828793\t13.251524986416104\n2021-05-20 00:00:00.0\t9.340754410698116\t13.043311512017738\n2021-05-21 00:00:00.0\t9.217018026729423\t13.543796318394032\n2021-05-22 00:00:00.0\t9.195531256322475\t13.642612064329434\n2021-05-23 00:00:00.0\t9.004422601327041\t12.324202287778219\n2021-05-24 00:00:00.0\t9.133459327640225\t13.136528575587674\n2021-05-25 00:00:00.0\t8.669914278433902\t13.475993289937048\n2021-05-26 00:00:00.0\t9.551871220788255\t12.864892321640468\n2021-05-27 00:00:00.0\t9.381853730053534\t12.31336529341779\n2021-05-28 00:00:00.0\t9.42060129745938\t12.108068339825607\n2021-05-29 00:00:00.0\t9.368198456591763\t13.304154793698638\n2021-05-30 00:00:00.0\t8.676928249537397\t12.684800606874886\n2021-05-31 00:00:00.0\t9.515543058145953\t14.522393963136112\n2021-06-01 00:00:00.0\t9.21054035197885\t13.590298619010428\n2021-06-02 00:00:00.0\t9.526318313582811\t13.126182076881603\n2021-06-03 00:00:00.0\t9.590282522853261\t13.047006009696313\n2021-06-04 00:00:00.0\t9.639391789890489\t12.416993806818487\n2021-06-05 00:00:00.0\t9.437714959818209\t12.362490752799834\n2021-06-06 00:00:00.0\t9.448254302193842\t12.395063579171513\n2021-06-07 00:00:00.0\t9.355133116877724\t13.27607967718795\n2021-06-08 00:00:00.0\t9.462032506694808\t13.916203497416703\n2021-06-09 00:00:00.0\t9.825634113331263\t13.846442203832392\n"
+          },
+          {
+            "type": "HTML",
+            "data": "<div class=\"result-alert alert-warning\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Output is truncated</strong> to 1000 rows. Learn more about <strong>zeppelin.spark.maxResult</strong></div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "date": "string",
+                      "LOG(new_vaccinations)": "string",
+                      "LOG(new_deaths)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=12",
+              "$$hashKey": "object:3761"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627447159369_1451641232",
+      "id": "paragraph_1627447159369_1451641232",
+      "dateCreated": "2021-07-27T23:39:19-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2824",
+      "text": "z.show(data.select($\"date\",log($\"new_vaccinations\"), log($\"new_deaths\")))",
+      "dateUpdated": "2021-07-27T23:39:58-0500",
+      "dateFinished": "2021-07-27T23:39:57-0500",
+      "dateStarted": "2021-07-27T23:39:56-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "date\tLOG(new_vaccinations)\tLOG(new_deaths)\n2020-02-24 00:00:00.0\tnull\tnull\n2020-02-25 00:00:00.0\tnull\tnull\n2020-02-26 00:00:00.0\tnull\tnull\n2020-02-27 00:00:00.0\tnull\tnull\n2020-02-28 00:00:00.0\tnull\tnull\n2020-02-29 00:00:00.0\tnull\tnull\n2020-03-01 00:00:00.0\tnull\tnull\n2020-03-02 00:00:00.0\tnull\tnull\n2020-03-03 00:00:00.0\tnull\tnull\n2020-03-04 00:00:00.0\tnull\tnull\n2020-03-05 00:00:00.0\tnull\tnull\n2020-03-06 00:00:00.0\tnull\tnull\n2020-03-07 00:00:00.0\tnull\tnull\n2020-03-08 00:00:00.0\tnull\tnull\n2020-03-09 00:00:00.0\tnull\tnull\n2020-03-10 00:00:00.0\tnull\tnull\n2020-03-11 00:00:00.0\tnull\tnull\n2020-03-12 00:00:00.0\tnull\tnull\n2020-03-13 00:00:00.0\tnull\tnull\n2020-03-14 00:00:00.0\tnull\tnull\n2020-03-15 00:00:00.0\tnull\tnull\n2020-03-16 00:00:00.0\tnull\tnull\n2020-03-17 00:00:00.0\tnull\tnull\n2020-03-18 00:00:00.0\tnull\tnull\n2020-03-19 00:00:00.0\tnull\tnull\n2020-03-20 00:00:00.0\tnull\tnull\n2020-03-21 00:00:00.0\tnull\tnull\n2020-03-22 00:00:00.0\tnull\t0.0\n2020-03-23 00:00:00.0\tnull\tnull\n2020-03-24 00:00:00.0\tnull\tnull\n2020-03-25 00:00:00.0\tnull\t0.0\n2020-03-26 00:00:00.0\tnull\t0.0\n2020-03-27 00:00:00.0\tnull\tnull\n2020-03-28 00:00:00.0\tnull\t0.0\n2020-03-29 00:00:00.0\tnull\tnull\n2020-03-30 00:00:00.0\tnull\tnull\n2020-03-31 00:00:00.0\tnull\tnull\n2020-04-01 00:00:00.0\tnull\tnull\n2020-04-02 00:00:00.0\tnull\tnull\n2020-04-03 00:00:00.0\tnull\t1.3862943611198906\n2020-04-04 00:00:00.0\tnull\t0.6931471805599453\n2020-04-05 00:00:00.0\tnull\t0.6931471805599453\n2020-04-06 00:00:00.0\tnull\t1.0986122886681098\n2020-04-07 00:00:00.0\tnull\t0.0\n2020-04-08 00:00:00.0\tnull\tnull\n2020-04-09 00:00:00.0\tnull\t0.0\n2020-04-10 00:00:00.0\tnull\t0.0\n2020-04-11 00:00:00.0\tnull\tnull\n2020-04-12 00:00:00.0\tnull\t0.0\n2020-04-13 00:00:00.0\tnull\t1.0986122886681098\n2020-04-14 00:00:00.0\tnull\t0.0\n2020-04-15 00:00:00.0\tnull\t1.791759469228055\n2020-04-16 00:00:00.0\tnull\t0.0\n2020-04-17 00:00:00.0\tnull\tnull\n2020-04-18 00:00:00.0\tnull\tnull\n2020-04-19 00:00:00.0\tnull\t1.0986122886681098\n2020-04-20 00:00:00.0\tnull\t1.0986122886681098\n2020-04-21 00:00:00.0\tnull\tnull\n2020-04-22 00:00:00.0\tnull\t1.3862943611198906\n2020-04-23 00:00:00.0\tnull\tnull\n2020-04-24 00:00:00.0\tnull\t1.0986122886681098\n2020-04-25 00:00:00.0\tnull\t1.3862943611198906\n2020-04-26 00:00:00.0\tnull\t1.6094379124341003\n2020-04-27 00:00:00.0\tnull\t1.791759469228055\n2020-04-28 00:00:00.0\tnull\t0.0\n2020-04-29 00:00:00.0\tnull\t0.6931471805599453\n2020-04-30 00:00:00.0\tnull\t1.0986122886681098\n2020-05-01 00:00:00.0\tnull\t1.3862943611198906\n2020-05-02 00:00:00.0\tnull\t1.3862943611198906\n2020-05-03 00:00:00.0\tnull\t2.5649493574615367\n2020-05-04 00:00:00.0\tnull\t1.6094379124341003\n2020-05-05 00:00:00.0\tnull\t1.6094379124341003\n2020-05-06 00:00:00.0\tnull\t2.1972245773362196\n2020-05-07 00:00:00.0\tnull\t0.6931471805599453\n2020-05-08 00:00:00.0\tnull\t1.0986122886681098\n2020-05-09 00:00:00.0\tnull\t1.791759469228055\n2020-05-10 00:00:00.0\tnull\t1.6094379124341003\n2020-05-11 00:00:00.0\tnull\t0.6931471805599453\n2020-05-12 00:00:00.0\tnull\t1.6094379124341003\n2020-05-13 00:00:00.0\tnull\t1.6094379124341003\n2020-05-14 00:00:00.0\tnull\t1.3862943611198906\n2020-05-15 00:00:00.0\tnull\t2.833213344056216\n2020-05-16 00:00:00.0\tnull\t2.70805020110221\n2020-05-17 00:00:00.0\tnull\t0.6931471805599453\n2020-05-18 00:00:00.0\tnull\t1.0986122886681098\n2020-05-19 00:00:00.0\tnull\t1.6094379124341003\n2020-05-20 00:00:00.0\tnull\t2.302585092994046\n2020-05-21 00:00:00.0\tnull\t1.791759469228055\n2020-05-22 00:00:00.0\tnull\t2.4849066497880004\n2020-05-23 00:00:00.0\tnull\t2.3978952727983707\n2020-05-24 00:00:00.0\tnull\t0.6931471805599453\n2020-05-25 00:00:00.0\tnull\t0.0\n2020-05-26 00:00:00.0\tnull\t0.0\n2020-05-27 00:00:00.0\tnull\t1.9459101490553132\n2020-05-28 00:00:00.0\tnull\t2.0794415416798357\n2020-05-29 00:00:00.0\tnull\t2.3978952727983707\n2020-05-30 00:00:00.0\tnull\t1.0986122886681098\n2020-05-31 00:00:00.0\tnull\t2.0794415416798357\n2020-06-01 00:00:00.0\tnull\t2.0794415416798357\n2020-06-02 00:00:00.0\tnull\t2.0794415416798357\n2020-06-03 00:00:00.0\tnull\t3.1780538303479458\n2020-06-04 00:00:00.0\tnull\t1.791759469228055\n2020-06-05 00:00:00.0\tnull\t2.1972245773362196\n2020-06-06 00:00:00.0\tnull\t2.8903717578961645\n2020-06-07 00:00:00.0\tnull\t3.4011973816621555\n2020-06-08 00:00:00.0\tnull\t2.4849066497880004\n2020-06-09 00:00:00.0\tnull\t2.70805020110221\n2020-06-10 00:00:00.0\tnull\t3.044522437723423\n2020-06-11 00:00:00.0\tnull\t3.044522437723423\n2020-06-12 00:00:00.0\tnull\t2.995732273553991\n2020-06-13 00:00:00.0\tnull\t1.6094379124341003\n2020-06-14 00:00:00.0\tnull\t2.995732273553991\n2020-06-15 00:00:00.0\tnull\t1.9459101490553132\n2020-06-16 00:00:00.0\tnull\t2.5649493574615367\n2020-06-17 00:00:00.0\tnull\t2.5649493574615367\n2020-06-18 00:00:00.0\tnull\t3.7376696182833684\n2020-06-19 00:00:00.0\tnull\t0.6931471805599453\n2020-06-20 00:00:00.0\tnull\t3.044522437723423\n2020-06-21 00:00:00.0\tnull\t2.4849066497880004\n2020-06-22 00:00:00.0\tnull\t2.4849066497880004\n2020-06-23 00:00:00.0\tnull\t2.995732273553991\n2020-06-24 00:00:00.0\tnull\t3.044522437723423\n2020-06-25 00:00:00.0\tnull\t3.58351893845611\n2020-06-26 00:00:00.0\tnull\t2.0794415416798357\n2020-06-27 00:00:00.0\tnull\t3.5263605246161616\n2020-06-28 00:00:00.0\tnull\t2.4849066497880004\n2020-06-29 00:00:00.0\tnull\t2.4849066497880004\n2020-06-30 00:00:00.0\tnull\t2.4849066497880004\n2020-07-01 00:00:00.0\tnull\t3.332204510175204\n2020-07-02 00:00:00.0\tnull\t3.367295829986474\n2020-07-03 00:00:00.0\tnull\t2.4849066497880004\n2020-07-04 00:00:00.0\tnull\t1.9459101490553132\n2020-07-05 00:00:00.0\tnull\t3.6375861597263857\n2020-07-06 00:00:00.0\tnull\t3.5263605246161616\n2020-07-07 00:00:00.0\tnull\t3.091042453358316\n2020-07-08 00:00:00.0\tnull\t2.833213344056216\n2020-07-09 00:00:00.0\tnull\t2.995732273553991\n2020-07-10 00:00:00.0\tnull\t2.6390573296152584\n2020-07-11 00:00:00.0\tnull\t3.1354942159291497\n2020-07-12 00:00:00.0\tnull\t2.772588722239781\n2020-07-13 00:00:00.0\tnull\t3.332204510175204\n2020-07-14 00:00:00.0\tnull\t3.1780538303479458\n2020-07-15 00:00:00.0\tnull\t3.4657359027997265\n2020-07-16 00:00:00.0\tnull\t3.044522437723423\n2020-07-17 00:00:00.0\tnull\t3.4657359027997265\n2020-07-18 00:00:00.0\tnull\t2.833213344056216\n2020-07-19 00:00:00.0\tnull\t2.833213344056216\n2020-07-20 00:00:00.0\tnull\t0.6931471805599453\n2020-07-21 00:00:00.0\tnull\t1.0986122886681098\n2020-07-22 00:00:00.0\tnull\t1.3862943611198906\n2020-07-23 00:00:00.0\tnull\t3.044522437723423\n2020-07-24 00:00:00.0\tnull\t2.6390573296152584\n2020-07-25 00:00:00.0\tnull\t3.091042453358316\n2020-07-26 00:00:00.0\tnull\t2.4849066497880004\n2020-07-27 00:00:00.0\tnull\t2.302585092994046\n2020-07-28 00:00:00.0\tnull\t0.0\n2020-07-29 00:00:00.0\tnull\t0.0\n2020-07-30 00:00:00.0\tnull\t2.302585092994046\n2020-07-31 00:00:00.0\tnull\t0.0\n2020-08-01 00:00:00.0\tnull\t0.0\n2020-08-02 00:00:00.0\tnull\t0.0\n2020-08-03 00:00:00.0\tnull\t1.3862943611198906\n2020-08-04 00:00:00.0\tnull\tnull\n2020-08-05 00:00:00.0\tnull\t1.791759469228055\n2020-08-06 00:00:00.0\tnull\t1.6094379124341003\n2020-08-07 00:00:00.0\tnull\t2.1972245773362196\n2020-08-08 00:00:00.0\tnull\t1.6094379124341003\n2020-08-09 00:00:00.0\tnull\t1.791759469228055\n2020-08-10 00:00:00.0\tnull\t2.0794415416798357\n2020-08-11 00:00:00.0\tnull\t2.833213344056216\n2020-08-12 00:00:00.0\tnull\t2.302585092994046\n2020-08-13 00:00:00.0\tnull\t2.1972245773362196\n2020-08-14 00:00:00.0\tnull\t1.6094379124341003\n2020-08-15 00:00:00.0\tnull\t0.0\n2020-08-16 00:00:00.0\tnull\t1.6094379124341003\n2020-08-17 00:00:00.0\tnull\t0.6931471805599453\n2020-08-18 00:00:00.0\tnull\t1.3862943611198906\n2020-08-19 00:00:00.0\tnull\t0.6931471805599453\n2020-08-20 00:00:00.0\tnull\t0.6931471805599453\n2020-08-21 00:00:00.0\tnull\tnull\n2020-08-22 00:00:00.0\tnull\tnull\n2020-08-23 00:00:00.0\tnull\t0.6931471805599453\n2020-08-24 00:00:00.0\tnull\t0.6931471805599453\n2020-08-25 00:00:00.0\tnull\t2.0794415416798357\n2020-08-26 00:00:00.0\tnull\t1.3862943611198906\n2020-08-27 00:00:00.0\tnull\tnull\n2020-08-28 00:00:00.0\tnull\t0.0\n2020-08-29 00:00:00.0\tnull\tnull\n2020-08-30 00:00:00.0\tnull\tnull\n2020-08-31 00:00:00.0\tnull\tnull\n2020-09-01 00:00:00.0\tnull\t1.3862943611198906\n2020-09-02 00:00:00.0\tnull\t1.0986122886681098\n2020-09-03 00:00:00.0\tnull\tnull\n2020-09-04 00:00:00.0\tnull\tnull\n2020-09-05 00:00:00.0\tnull\tnull\n2020-09-06 00:00:00.0\tnull\t1.0986122886681098\n2020-09-07 00:00:00.0\tnull\t1.0986122886681098\n2020-09-08 00:00:00.0\tnull\t1.0986122886681098\n2020-09-09 00:00:00.0\tnull\t0.6931471805599453\n2020-09-10 00:00:00.0\tnull\tnull\n2020-09-11 00:00:00.0\tnull\tnull\n2020-09-12 00:00:00.0\tnull\tnull\n2020-09-13 00:00:00.0\tnull\tnull\n2020-09-14 00:00:00.0\tnull\t1.791759469228055\n2020-09-15 00:00:00.0\tnull\t0.0\n2020-09-16 00:00:00.0\tnull\t2.302585092994046\n2020-09-17 00:00:00.0\tnull\tnull\n2020-09-18 00:00:00.0\tnull\t0.0\n2020-09-19 00:00:00.0\tnull\tnull\n2020-09-20 00:00:00.0\tnull\t1.3862943611198906\n2020-09-21 00:00:00.0\tnull\t1.0986122886681098\n2020-09-22 00:00:00.0\tnull\t0.0\n2020-09-23 00:00:00.0\tnull\t0.0\n2020-09-24 00:00:00.0\tnull\t1.6094379124341003\n2020-09-25 00:00:00.0\tnull\tnull\n2020-09-26 00:00:00.0\tnull\t0.6931471805599453\n2020-09-27 00:00:00.0\tnull\tnull\n2020-09-28 00:00:00.0\tnull\t1.0986122886681098\n2020-09-29 00:00:00.0\tnull\t0.6931471805599453\n2020-09-30 00:00:00.0\tnull\tnull\n2020-10-01 00:00:00.0\tnull\tnull\n2020-10-02 00:00:00.0\tnull\tnull\n2020-10-03 00:00:00.0\tnull\t1.3862943611198906\n2020-10-04 00:00:00.0\tnull\tnull\n2020-10-05 00:00:00.0\tnull\t1.3862943611198906\n2020-10-06 00:00:00.0\tnull\t0.0\n2020-10-07 00:00:00.0\tnull\t0.6931471805599453\n2020-10-08 00:00:00.0\tnull\t0.0\n2020-10-09 00:00:00.0\tnull\t0.6931471805599453\n2020-10-10 00:00:00.0\tnull\t0.0\n2020-10-11 00:00:00.0\tnull\t1.3862943611198906\n2020-10-12 00:00:00.0\tnull\t0.6931471805599453\n2020-10-13 00:00:00.0\tnull\t0.0\n2020-10-14 00:00:00.0\tnull\t0.0\n2020-10-15 00:00:00.0\tnull\tnull\n2020-10-16 00:00:00.0\tnull\t1.3862943611198906\n2020-10-17 00:00:00.0\tnull\t1.0986122886681098\n2020-10-18 00:00:00.0\tnull\t1.3862943611198906\n2020-10-19 00:00:00.0\tnull\t1.6094379124341003\n2020-10-20 00:00:00.0\tnull\t0.6931471805599453\n2020-10-21 00:00:00.0\tnull\t0.6931471805599453\n2020-10-22 00:00:00.0\tnull\t1.3862943611198906\n2020-10-23 00:00:00.0\tnull\t0.6931471805599453\n2020-10-24 00:00:00.0\tnull\t1.3862943611198906\n2020-10-25 00:00:00.0\tnull\t1.0986122886681098\n2020-10-26 00:00:00.0\tnull\t1.3862943611198906\n2020-10-27 00:00:00.0\tnull\t1.6094379124341003\n2020-10-28 00:00:00.0\tnull\t1.791759469228055\n2020-10-29 00:00:00.0\tnull\t1.0986122886681098\n2020-10-30 00:00:00.0\tnull\t0.0\n2020-10-31 00:00:00.0\tnull\t1.0986122886681098\n2020-11-01 00:00:00.0\tnull\tnull\n2020-11-02 00:00:00.0\tnull\t1.791759469228055\n2020-11-03 00:00:00.0\tnull\t1.0986122886681098\n2020-11-04 00:00:00.0\tnull\t1.3862943611198906\n2020-11-05 00:00:00.0\tnull\t1.791759469228055\n2020-11-06 00:00:00.0\tnull\tnull\n2020-11-07 00:00:00.0\tnull\t0.6931471805599453\n2020-11-08 00:00:00.0\tnull\t1.791759469228055\n2020-11-09 00:00:00.0\tnull\t2.4849066497880004\n2020-11-10 00:00:00.0\tnull\t1.0986122886681098\n2020-11-11 00:00:00.0\tnull\t1.3862943611198906\n2020-11-12 00:00:00.0\tnull\t2.302585092994046\n2020-11-13 00:00:00.0\tnull\t1.3862943611198906\n2020-11-14 00:00:00.0\tnull\t2.302585092994046\n2020-11-15 00:00:00.0\tnull\t2.4849066497880004\n2020-11-16 00:00:00.0\tnull\t2.70805020110221\n2020-11-17 00:00:00.0\tnull\t1.791759469228055\n2020-11-18 00:00:00.0\tnull\t1.9459101490553132\n2020-11-19 00:00:00.0\tnull\t1.6094379124341003\n2020-11-20 00:00:00.0\tnull\t2.5649493574615367\n2020-11-21 00:00:00.0\tnull\t2.4849066497880004\n2020-11-22 00:00:00.0\tnull\t2.4849066497880004\n2020-11-23 00:00:00.0\tnull\t2.4849066497880004\n2020-11-24 00:00:00.0\tnull\t2.5649493574615367\n2020-11-25 00:00:00.0\tnull\t2.5649493574615367\n2020-11-26 00:00:00.0\tnull\t2.1972245773362196\n2020-11-27 00:00:00.0\tnull\t1.0986122886681098\n2020-11-28 00:00:00.0\tnull\t2.4849066497880004\n2020-11-29 00:00:00.0\tnull\t3.091042453358316\n2020-11-30 00:00:00.0\tnull\t3.044522437723423\n2020-12-01 00:00:00.0\tnull\t3.295836866004329\n2020-12-02 00:00:00.0\tnull\t2.9444389791664403\n2020-12-03 00:00:00.0\tnull\t1.6094379124341003\n2020-12-04 00:00:00.0\tnull\tnull\n2020-12-05 00:00:00.0\tnull\t2.8903717578961645\n2020-12-06 00:00:00.0\tnull\t2.302585092994046\n2020-12-07 00:00:00.0\tnull\t3.258096538021482\n2020-12-08 00:00:00.0\tnull\t1.791759469228055\n2020-12-09 00:00:00.0\tnull\t2.5649493574615367\n2020-12-10 00:00:00.0\tnull\t2.772588722239781\n2020-12-11 00:00:00.0\tnull\t2.302585092994046\n2020-12-12 00:00:00.0\tnull\t2.3978952727983707\n2020-12-13 00:00:00.0\tnull\t2.1972245773362196\n2020-12-14 00:00:00.0\tnull\t1.3862943611198906\n2020-12-15 00:00:00.0\tnull\t3.258096538021482\n2020-12-16 00:00:00.0\tnull\t2.772588722239781\n2020-12-17 00:00:00.0\tnull\t2.6390573296152584\n2020-12-18 00:00:00.0\tnull\t1.6094379124341003\n2020-12-19 00:00:00.0\tnull\t2.833213344056216\n2020-12-20 00:00:00.0\tnull\t2.995732273553991\n2020-12-21 00:00:00.0\tnull\t2.70805020110221\n2020-12-22 00:00:00.0\tnull\t2.6390573296152584\n2020-12-23 00:00:00.0\tnull\t3.044522437723423\n2020-12-24 00:00:00.0\tnull\t2.1972245773362196\n2020-12-25 00:00:00.0\tnull\t2.5649493574615367\n2020-12-26 00:00:00.0\tnull\t2.302585092994046\n2020-12-27 00:00:00.0\tnull\t2.3978952727983707\n2020-12-28 00:00:00.0\tnull\t2.6390573296152584\n2020-12-29 00:00:00.0\tnull\t1.6094379124341003\n2020-12-30 00:00:00.0\tnull\t0.6931471805599453\n2020-12-31 00:00:00.0\tnull\t2.302585092994046\n2021-01-01 00:00:00.0\tnull\tnull\n2021-01-02 00:00:00.0\tnull\tnull\n2021-01-03 00:00:00.0\tnull\tnull\n2021-01-04 00:00:00.0\tnull\t3.828641396489095\n2021-01-05 00:00:00.0\tnull\t1.9459101490553132\n2021-01-06 00:00:00.0\tnull\tnull\n2021-01-07 00:00:00.0\tnull\t2.1972245773362196\n2021-01-08 00:00:00.0\tnull\t1.3862943611198906\n2021-01-09 00:00:00.0\tnull\t1.9459101490553132\n2021-01-10 00:00:00.0\tnull\t2.5649493574615367\n2021-01-11 00:00:00.0\tnull\t2.3978952727983707\n2021-01-12 00:00:00.0\tnull\t2.5649493574615367\n2021-01-13 00:00:00.0\tnull\tnull\n2021-01-14 00:00:00.0\tnull\t2.5649493574615367\n2021-01-15 00:00:00.0\tnull\t2.302585092994046\n2021-01-16 00:00:00.0\tnull\t2.4849066497880004\n2021-01-17 00:00:00.0\tnull\t1.0986122886681098\n2021-01-18 00:00:00.0\tnull\t1.3862943611198906\n2021-01-19 00:00:00.0\tnull\t1.0986122886681098\n2021-01-20 00:00:00.0\tnull\t2.0794415416798357\n2021-01-21 00:00:00.0\tnull\t2.1972245773362196\n2021-01-22 00:00:00.0\tnull\t1.9459101490553132\n2021-01-23 00:00:00.0\tnull\t1.0986122886681098\n2021-01-24 00:00:00.0\tnull\t1.6094379124341003\n2021-01-25 00:00:00.0\tnull\t1.9459101490553132\n2021-01-26 00:00:00.0\tnull\t1.3862943611198906\n2021-01-27 00:00:00.0\tnull\tnull\n2021-01-28 00:00:00.0\tnull\t2.0794415416798357\n2021-01-29 00:00:00.0\tnull\t0.6931471805599453\n2021-01-30 00:00:00.0\tnull\t0.0\n2021-01-31 00:00:00.0\tnull\tnull\n2021-02-01 00:00:00.0\tnull\t1.3862943611198906\n2021-02-02 00:00:00.0\tnull\t0.0\n2021-02-03 00:00:00.0\tnull\t0.0\n2021-02-04 00:00:00.0\tnull\t0.0\n2021-02-05 00:00:00.0\tnull\tnull\n2021-02-06 00:00:00.0\tnull\t0.0\n2021-02-07 00:00:00.0\tnull\t0.6931471805599453\n2021-02-08 00:00:00.0\tnull\t1.0986122886681098\n2021-02-09 00:00:00.0\tnull\t0.0\n2021-02-10 00:00:00.0\tnull\t1.3862943611198906\n2021-02-11 00:00:00.0\tnull\t0.0\n2021-02-12 00:00:00.0\tnull\t1.6094379124341003\n2021-02-13 00:00:00.0\tnull\t1.0986122886681098\n2021-02-14 00:00:00.0\tnull\tnull\n2021-02-15 00:00:00.0\tnull\tnull\n2021-02-16 00:00:00.0\tnull\t0.0\n2021-02-17 00:00:00.0\tnull\tnull\n2021-02-18 00:00:00.0\tnull\t0.6931471805599453\n2021-02-19 00:00:00.0\tnull\tnull\n2021-02-20 00:00:00.0\tnull\tnull\n2021-02-21 00:00:00.0\tnull\t0.6931471805599453\n2021-02-22 00:00:00.0\tnull\t0.0\n2021-02-23 00:00:00.0\tnull\t0.6931471805599453\n2021-02-24 00:00:00.0\tnull\t0.0\n2021-02-25 00:00:00.0\tnull\t0.6931471805599453\n2021-02-26 00:00:00.0\tnull\t1.3862943611198906\n2021-02-27 00:00:00.0\tnull\t0.0\n2021-02-28 00:00:00.0\tnull\tnull\n2021-03-01 00:00:00.0\tnull\t0.0\n2021-03-02 00:00:00.0\tnull\t0.6931471805599453\n2021-03-03 00:00:00.0\tnull\tnull\n2021-03-04 00:00:00.0\tnull\tnull\n2021-03-05 00:00:00.0\tnull\t1.0986122886681098\n2021-03-06 00:00:00.0\tnull\tnull\n2021-03-07 00:00:00.0\tnull\tnull\n2021-03-08 00:00:00.0\tnull\t0.6931471805599453\n2021-03-09 00:00:00.0\tnull\tnull\n2021-03-10 00:00:00.0\tnull\tnull\n2021-03-11 00:00:00.0\tnull\tnull\n2021-03-12 00:00:00.0\tnull\t1.0986122886681098\n2021-03-13 00:00:00.0\tnull\tnull\n2021-03-14 00:00:00.0\tnull\t1.0986122886681098\n2021-03-15 00:00:00.0\tnull\t0.6931471805599453\n2021-03-16 00:00:00.0\tnull\t0.0\n2021-03-17 00:00:00.0\tnull\tnull\n2021-03-18 00:00:00.0\tnull\t0.6931471805599453\n2021-03-19 00:00:00.0\tnull\tnull\n2021-03-20 00:00:00.0\tnull\tnull\n2021-03-21 00:00:00.0\tnull\t0.0\n2021-03-22 00:00:00.0\tnull\t0.0\n2021-03-23 00:00:00.0\tnull\t0.6931471805599453\n2021-03-24 00:00:00.0\tnull\tnull\n2021-03-25 00:00:00.0\tnull\t0.0\n2021-03-26 00:00:00.0\tnull\tnull\n2021-03-27 00:00:00.0\tnull\t0.6931471805599453\n2021-03-28 00:00:00.0\tnull\t0.0\n2021-03-29 00:00:00.0\tnull\t0.6931471805599453\n2021-03-30 00:00:00.0\tnull\t1.3862943611198906\n2021-03-31 00:00:00.0\tnull\t2.0794415416798357\n2021-04-01 00:00:00.0\tnull\t1.6094379124341003\n2021-04-02 00:00:00.0\tnull\t1.791759469228055\n2021-04-03 00:00:00.0\tnull\t0.0\n2021-04-04 00:00:00.0\tnull\t0.0\n2021-04-05 00:00:00.0\tnull\t2.3978952727983707\n2021-04-06 00:00:00.0\tnull\t1.3862943611198906\n2021-04-07 00:00:00.0\tnull\tnull\n2021-04-08 00:00:00.0\tnull\t1.3862943611198906\n2021-04-09 00:00:00.0\tnull\t1.6094379124341003\n2021-04-10 00:00:00.0\tnull\tnull\n2021-04-11 00:00:00.0\tnull\tnull\n2021-04-12 00:00:00.0\tnull\t2.0794415416798357\n2021-04-13 00:00:00.0\tnull\tnull\n2021-04-14 00:00:00.0\tnull\t1.0986122886681098\n2021-04-15 00:00:00.0\tnull\t0.0\n2021-04-16 00:00:00.0\tnull\t0.6931471805599453\n2021-04-17 00:00:00.0\tnull\t1.3862943611198906\n2021-04-18 00:00:00.0\tnull\tnull\n2021-04-19 00:00:00.0\tnull\t1.9459101490553132\n2021-04-20 00:00:00.0\tnull\t1.0986122886681098\n2021-04-21 00:00:00.0\tnull\t2.0794415416798357\n2021-04-22 00:00:00.0\tnull\t1.3862943611198906\n2021-04-23 00:00:00.0\tnull\t1.3862943611198906\n2021-04-24 00:00:00.0\tnull\t1.9459101490553132\n2021-04-25 00:00:00.0\tnull\t2.302585092994046\n2021-04-26 00:00:00.0\tnull\t2.302585092994046\n2021-04-27 00:00:00.0\tnull\t1.791759469228055\n2021-04-28 00:00:00.0\tnull\t2.5649493574615367\n2021-04-29 00:00:00.0\tnull\t1.9459101490553132\n2021-04-30 00:00:00.0\tnull\t1.9459101490553132\n2021-05-01 00:00:00.0\tnull\t1.791759469228055\n2021-05-02 00:00:00.0\tnull\t1.791759469228055\n2021-05-03 00:00:00.0\tnull\t1.6094379124341003\n2021-05-04 00:00:00.0\tnull\t1.791759469228055\n2021-05-05 00:00:00.0\tnull\t1.791759469228055\n2021-05-06 00:00:00.0\tnull\t2.302585092994046\n2021-05-07 00:00:00.0\tnull\t2.1972245773362196\n2021-05-08 00:00:00.0\tnull\t2.302585092994046\n2021-05-09 00:00:00.0\tnull\t1.0986122886681098\n2021-05-10 00:00:00.0\tnull\t2.4849066497880004\n2021-05-11 00:00:00.0\tnull\t2.4849066497880004\n2021-05-12 00:00:00.0\tnull\t1.0986122886681098\n2021-05-13 00:00:00.0\tnull\t2.0794415416798357\n2021-05-14 00:00:00.0\tnull\t2.1972245773362196\n2021-05-15 00:00:00.0\tnull\t1.0986122886681098\n2021-05-16 00:00:00.0\tnull\t2.1972245773362196\n2021-05-17 00:00:00.0\tnull\t1.0986122886681098\n2021-05-18 00:00:00.0\tnull\t1.791759469228055\n2021-05-19 00:00:00.0\tnull\t2.3978952727983707\n2021-05-20 00:00:00.0\tnull\t2.302585092994046\n2021-05-21 00:00:00.0\tnull\t2.302585092994046\n2021-05-22 00:00:00.0\tnull\t2.302585092994046\n2021-05-23 00:00:00.0\tnull\t2.302585092994046\n2021-05-24 00:00:00.0\tnull\t2.302585092994046\n2021-05-25 00:00:00.0\tnull\t3.1780538303479458\n2021-05-26 00:00:00.0\tnull\t2.9444389791664403\n2021-05-27 00:00:00.0\t7.958227192322312\t2.6390573296152584\n2021-05-28 00:00:00.0\tnull\t2.4849066497880004\n2021-05-29 00:00:00.0\tnull\t2.8903717578961645\n2021-05-30 00:00:00.0\tnull\t2.995732273553991\n2021-05-31 00:00:00.0\tnull\t3.2188758248682006\n2021-06-01 00:00:00.0\tnull\t3.367295829986474\n2021-06-02 00:00:00.0\tnull\t3.5263605246161616\n2021-06-03 00:00:00.0\t8.297792626380861\t3.295836866004329\n2021-06-04 00:00:00.0\tnull\t3.5263605246161616\n2021-06-05 00:00:00.0\tnull\t3.58351893845611\n2021-06-06 00:00:00.0\tnull\t3.713572066704308\n2021-06-07 00:00:00.0\tnull\t3.7376696182833684\n2021-06-08 00:00:00.0\tnull\t4.1588830833596715\n2021-06-09 00:00:00.0\tnull\t3.9889840465642745\n2021-06-10 00:00:00.0\tnull\t3.9318256327243257\n2021-06-11 00:00:00.0\tnull\t4.02535169073515\n2021-06-12 00:00:00.0\tnull\t3.6109179126442243\n2021-06-13 00:00:00.0\tnull\t4.356708826689592\n2021-06-14 00:00:00.0\tnull\t4.442651256490317\n2021-06-15 00:00:00.0\tnull\t4.2626798770413155\n2021-06-16 00:00:00.0\tnull\tnull\n2021-06-17 00:00:00.0\tnull\t5.0689042022202315\n2021-06-18 00:00:00.0\tnull\t4.5217885770490405\n2021-06-19 00:00:00.0\tnull\tnull\n2021-06-20 00:00:00.0\tnull\tnull\n2021-06-21 00:00:00.0\tnull\t5.638354669333745\n2021-06-22 00:00:00.0\tnull\t4.356708826689592\n2021-06-23 00:00:00.0\tnull\t4.290459441148391\n2021-06-24 00:00:00.0\tnull\t4.454347296253507\n2021-06-25 00:00:00.0\tnull\t4.204692619390966\n2021-06-26 00:00:00.0\tnull\tnull\n2021-06-27 00:00:00.0\tnull\tnull\n2021-06-28 00:00:00.0\tnull\t5.351858133476067\n2021-06-29 00:00:00.0\tnull\t4.1588830833596715\n2021-06-30 00:00:00.0\tnull\t4.343805421853684\n2021-07-01 00:00:00.0\tnull\t4.51085950651685\n2021-07-02 00:00:00.0\tnull\tnull\n2021-07-03 00:00:00.0\tnull\tnull\n2021-07-04 00:00:00.0\tnull\tnull\n2021-07-05 00:00:00.0\tnull\t5.771441123130016\n2021-07-06 00:00:00.0\tnull\t4.343805421853684\n2021-07-07 00:00:00.0\tnull\t4.007333185232471\n2021-07-08 00:00:00.0\tnull\t4.127134385045092\n2021-07-09 00:00:00.0\tnull\t4.430816798843313\n2021-07-10 00:00:00.0\tnull\tnull\n2021-07-11 00:00:00.0\tnull\tnull\n2021-07-12 00:00:00.0\tnull\t5.438079308923196\n2021-07-13 00:00:00.0\tnull\tnull\n2021-07-14 00:00:00.0\tnull\t4.882801922586371\n2021-07-15 00:00:00.0\tnull\t4.0943445622221\n2021-07-16 00:00:00.0\tnull\tnull\n2021-07-17 00:00:00.0\tnull\tnull\n2021-07-18 00:00:00.0\tnull\tnull\n2021-07-19 00:00:00.0\tnull\t5.438079308923196\n2021-07-20 00:00:00.0\tnull\t3.970291913552122\n2021-07-21 00:00:00.0\tnull\tnull\n2021-07-22 00:00:00.0\tnull\t4.07753744390572\n2021-07-23 00:00:00.0\tnull\t3.4657359027997265\n2021-07-24 00:00:00.0\tnull\tnull\n2020-02-13 00:00:00.0\tnull\tnull\n2020-02-14 00:00:00.0\tnull\tnull\n2020-02-15 00:00:00.0\tnull\tnull\n2020-02-16 00:00:00.0\tnull\tnull\n2020-02-17 00:00:00.0\tnull\tnull\n2020-02-18 00:00:00.0\tnull\tnull\n2020-02-19 00:00:00.0\tnull\tnull\n2020-02-20 00:00:00.0\tnull\tnull\n2020-02-21 00:00:00.0\tnull\tnull\n2020-02-22 00:00:00.0\tnull\tnull\n2020-02-23 00:00:00.0\tnull\tnull\n2020-02-24 00:00:00.0\tnull\tnull\n2020-02-25 00:00:00.0\tnull\tnull\n2020-02-26 00:00:00.0\tnull\tnull\n2020-02-27 00:00:00.0\tnull\tnull\n2020-02-28 00:00:00.0\tnull\tnull\n2020-02-29 00:00:00.0\tnull\tnull\n2020-03-01 00:00:00.0\tnull\tnull\n2020-03-02 00:00:00.0\tnull\tnull\n2020-03-03 00:00:00.0\tnull\tnull\n2020-03-04 00:00:00.0\tnull\tnull\n2020-03-05 00:00:00.0\tnull\tnull\n2020-03-06 00:00:00.0\tnull\tnull\n2020-03-07 00:00:00.0\tnull\tnull\n2020-03-08 00:00:00.0\tnull\t0.0\n2020-03-09 00:00:00.0\tnull\tnull\n2020-03-10 00:00:00.0\tnull\t0.0\n2020-03-11 00:00:00.0\tnull\tnull\n2020-03-12 00:00:00.0\tnull\t0.0\n2020-03-13 00:00:00.0\tnull\t1.0986122886681098\n2020-03-14 00:00:00.0\tnull\t0.0\n2020-03-15 00:00:00.0\tnull\t0.0\n2020-03-16 00:00:00.0\tnull\tnull\n2020-03-17 00:00:00.0\tnull\t1.0986122886681098\n2020-03-18 00:00:00.0\tnull\t1.791759469228055\n2020-03-19 00:00:00.0\tnull\t1.0986122886681098\n2020-03-20 00:00:00.0\tnull\t1.791759469228055\n2020-03-21 00:00:00.0\tnull\t2.302585092994046\n2020-03-22 00:00:00.0\tnull\t2.4849066497880004\n2020-03-23 00:00:00.0\tnull\t2.1972245773362196\n2020-03-24 00:00:00.0\tnull\t1.9459101490553132\n2020-03-25 00:00:00.0\tnull\t2.1972245773362196\n2020-03-26 00:00:00.0\tnull\t2.8903717578961645\n2020-03-27 00:00:00.0\tnull\t3.1780538303479458\n2020-03-28 00:00:00.0\tnull\t2.9444389791664403\n2020-03-29 00:00:00.0\tnull\t2.8903717578961645\n2020-03-30 00:00:00.0\tnull\t3.044522437723423\n2020-03-31 00:00:00.0\tnull\t3.295836866004329\n2020-04-01 00:00:00.0\tnull\t3.5263605246161616\n2020-04-02 00:00:00.0\tnull\t3.970291913552122\n2020-04-03 00:00:00.0\tnull\t3.784189633918261\n2020-04-04 00:00:00.0\tnull\t3.9512437185814275\n2020-04-05 00:00:00.0\tnull\t4.110873864173311\n2020-04-06 00:00:00.0\tnull\t3.7612001156935624\n2020-04-07 00:00:00.0\tnull\t3.828641396489095\n2020-04-08 00:00:00.0\tnull\t3.713572066704308\n2020-04-09 00:00:00.0\tnull\t3.970291913552122\n2020-04-10 00:00:00.0\tnull\t4.189654742026425\n2020-04-11 00:00:00.0\tnull\t3.8918202981106265\n2020-04-12 00:00:00.0\tnull\t3.828641396489095\n2020-04-13 00:00:00.0\tnull\t3.828641396489095\n2020-04-14 00:00:00.0\tnull\t3.6635616461296463\n2020-04-15 00:00:00.0\tnull\t3.6109179126442243\n2020-04-16 00:00:00.0\tnull\t4.007333185232471\n2020-04-17 00:00:00.0\tnull\t3.9318256327243257\n2020-04-18 00:00:00.0\tnull\t3.7376696182833684\n2020-04-19 00:00:00.0\tnull\t4.143134726391533\n2020-04-20 00:00:00.0\tnull\t3.6375861597263857\n2020-04-21 00:00:00.0\tnull\t3.4011973816621555\n2020-04-22 00:00:00.0\tnull\t3.9318256327243257\n2020-04-23 00:00:00.0\tnull\t4.04305126783455\n2020-04-24 00:00:00.0\tnull\t3.295836866004329\n2020-04-25 00:00:00.0\tnull\t3.9318256327243257\n2020-04-26 00:00:00.0\tnull\t3.871201010907891\n2020-04-27 00:00:00.0\tnull\t3.6635616461296463\n2020-04-28 00:00:00.0\tnull\t4.110873864173311\n2020-04-29 00:00:00.0\tnull\t4.174387269895637\n2020-04-30 00:00:00.0\tnull\t3.828641396489095\n2020-05-01 00:00:00.0\tnull\t4.060443010546419\n2020-05-02 00:00:00.0\tnull\t4.204692619390966\n2020-05-03 00:00:00.0\tnull\t3.6109179126442243\n2020-05-04 00:00:00.0\tnull\t3.828641396489095\n2020-05-05 00:00:00.0\tnull\t4.189654742026425\n2020-05-06 00:00:00.0\tnull\t4.584967478670572\n2020-05-07 00:00:00.0\tnull\t4.204692619390966\n2020-05-08 00:00:00.0\tnull\t4.394449154672439\n2020-05-09 00:00:00.0\tnull\t4.204692619390966\n2020-05-10 00:00:00.0\tnull\t4.23410650459726\n2020-05-11 00:00:00.0\tnull\t3.9889840465642745\n2020-05-12 00:00:00.0\tnull\t3.9318256327243257\n2020-05-13 00:00:00.0\tnull\t4.584967478670572\n2020-05-14 00:00:00.0\tnull\t4.23410650459726\n2020-05-15 00:00:00.0\tnull\t4.127134385045092\n2020-05-16 00:00:00.0\tnull\t4.430816798843313\n2020-05-17 00:00:00.0\tnull\t3.9318256327243257\n2020-05-18 00:00:00.0\tnull\t4.290459441148391\n2020-05-19 00:00:00.0\tnull\t4.31748811353631\n2020-05-20 00:00:00.0\tnull\t4.418840607796598\n2020-05-21 00:00:00.0\tnull\t4.653960350157523\n2020-05-22 00:00:00.0\tnull\t4.48863636973214\n2020-05-23 00:00:00.0\tnull\t4.290459441148391\n2020-05-24 00:00:00.0\tnull\t4.574710978503383\n2020-05-25 00:00:00.0\tnull\t4.8283137373023015\n2020-05-26 00:00:00.0\tnull\t4.718498871295094\n2020-05-27 00:00:00.0\tnull\t4.68213122712422\n2020-05-28 00:00:00.0\tnull\t4.5217885770490405\n2020-05-29 00:00:00.0\tnull\t4.875197323201151\n2020-05-30 00:00:00.0\tnull\t4.990432586778736\n2020-05-31 00:00:00.0\tnull\t5.030437921392435\n2020-06-01 00:00:00.0\tnull\t4.795790545596741\n2020-06-02 00:00:00.0\tnull\t5.017279836814924\n2020-06-03 00:00:00.0\tnull\t4.672828834461906\n2020-06-04 00:00:00.0\tnull\t5.043425116919247\n2020-06-05 00:00:00.0\tnull\t5.0689042022202315\n2020-06-06 00:00:00.0\tnull\t4.941642422609304\n2020-06-07 00:00:00.0\tnull\t4.890349128221754\n2020-06-08 00:00:00.0\tnull\t5.1647859739235145\n2020-06-09 00:00:00.0\tnull\t5.1647859739235145\n2020-06-10 00:00:00.0\tnull\t5.0106352940962555\n2020-06-11 00:00:00.0\tnull\t5.093750200806762\n2020-06-12 00:00:00.0\tnull\t5.293304824724492\n2020-06-13 00:00:00.0\tnull\t5.313205979041787\n2020-06-14 00:00:00.0\tnull\t5.327876168789581\n2020-06-15 00:00:00.0\tnull\t5.713732805509369\n2020-06-16 00:00:00.0\tnull\t5.53338948872752\n2020-06-17 00:00:00.0\tnull\t5.313205979041787\n2020-06-18 00:00:00.0\tnull\t5.303304908059076\n2020-06-19 00:00:00.0\tnull\t5.572154032177765\n2020-06-20 00:00:00.0\tnull\t5.4638318050256105\n2020-06-21 00:00:00.0\tnull\t5.2832037287379885\n2020-06-22 00:00:00.0\tnull\t5.407171771460119\n2020-06-23 00:00:00.0\tnull\t5.641907070938114\n2020-06-24 00:00:00.0\tnull\t5.459585514144159\n2020-06-25 00:00:00.0\tnull\t5.365976015021851\n2020-06-26 00:00:00.0\tnull\t5.3612921657094255\n2020-06-27 00:00:00.0\tnull\t5.308267697401205\n2020-06-28 00:00:00.0\tnull\t5.187385805840755\n2020-06-29 00:00:00.0\tnull\t5.375278407684165\n2020-06-30 00:00:00.0\tnull\t5.58724865840025\n2020-07-01 00:00:00.0\tnull\t5.556828061699537\n2020-07-02 00:00:00.0\tnull\t5.472270673671475\n2020-07-03 00:00:00.0\tnull\t5.476463551931511\n2020-07-04 00:00:00.0\tnull\t5.303304908059076\n2020-07-05 00:00:00.0\tnull\t5.634789603169249\n2020-07-06 00:00:00.0\tnull\t5.517452896464707\n2020-07-07 00:00:00.0\tnull\t5.8998973535824915\n2020-07-08 00:00:00.0\tnull\t5.541263545158426\n2020-07-09 00:00:00.0\tnull\t5.420534999272286\n2020-07-10 00:00:00.0\tnull\t5.736572297479192\n2020-07-11 00:00:00.0\tnull\t5.393627546352362\n2020-07-12 00:00:00.0\tnull\t5.54907608489522\n2020-07-13 00:00:00.0\tnull\t5.384495062789089\n2020-07-14 00:00:00.0\tnull\t5.700443573390687\n2020-07-15 00:00:00.0\tnull\t5.420534999272286\n2020-07-16 00:00:00.0\tnull\t5.91350300563827\n2020-07-17 00:00:00.0\tnull\t5.752572638825633\n2020-07-18 00:00:00.0\tnull\t5.641907070938114\n2020-07-19 00:00:00.0\tnull\t5.365976015021851\n2020-07-20 00:00:00.0\tnull\t5.537334267018537\n2020-07-21 00:00:00.0\tnull\t5.749392985908253\n2020-07-22 00:00:00.0\tnull\t6.56244409369372\n2020-07-23 00:00:00.0\tnull\t5.594711379601839\n2020-07-24 00:00:00.0\tnull\t5.966146739123692\n2020-07-25 00:00:00.0\tnull\t6.0330862217988015\n2020-07-26 00:00:00.0\tnull\t5.501258210544727\n2020-07-27 00:00:00.0\tnull\t6.013715156042802\n2020-07-28 00:00:00.0\tnull\t5.7745515455444085\n2020-07-29 00:00:00.0\tnull\t5.905361848054571\n2020-07-30 00:00:00.0\tnull\t6.118097198041348\n2020-07-31 00:00:00.0\tnull\t5.8971538676367405\n2020-08-01 00:00:00.0\tnull\t5.676753802268282\n2020-08-02 00:00:00.0\tnull\t5.805134968916488\n2020-08-03 00:00:00.0\tnull\t5.771441123130016\n2020-08-04 00:00:00.0\tnull\t6.156978985585555\n2020-08-05 00:00:00.0\tnull\t6.289715570908998\n2020-08-06 00:00:00.0\tnull\t6.066108090103747\n2020-08-07 00:00:00.0\tnull\t6.0844994130751715\n2020-08-08 00:00:00.0\tnull\t6.023447592961033\n2020-08-09 00:00:00.0\tnull\t5.8805329864007\n2020-08-10 00:00:00.0\tnull\t5.765191102784844\n2020-08-11 00:00:00.0\tnull\t5.594711379601839\n2020-08-12 00:00:00.0\tnull\t6.016157159698354\n2020-08-13 00:00:00.0\tnull\t6.003887067106539\n2020-08-14 00:00:00.0\tnull\t6.030685260261263\n2020-08-15 00:00:00.0\tnull\t5.480638923341991\n2020-08-16 00:00:00.0\tnull\t5.68697535633982\n2020-08-17 00:00:00.0\tnull\t5.575949103146316\n2020-08-18 00:00:00.0\tnull\t6.028278520230698\n2020-08-19 00:00:00.0\tnull\t5.793013608384144\n2020-08-20 00:00:00.0\tnull\t5.820082930352362\n2020-08-21 00:00:00.0\tnull\t5.863631175598097\n2020-08-22 00:00:00.0\tnull\t5.6131281063880705\n2020-08-23 00:00:00.0\tnull\t5.204006687076795\n2020-08-24 00:00:00.0\tnull\t5.393627546352362\n2020-08-25 00:00:00.0\tnull\t5.645446897643238\n2020-08-26 00:00:00.0\tnull\t5.765191102784844\n2020-08-27 00:00:00.0\tnull\t5.53338948872752\n2020-08-28 00:00:00.0\tnull\t5.442417710521793\n2020-08-29 00:00:00.0\tnull\t5.802118375377063\n2020-08-30 00:00:00.0\tnull\t5.099866427824199\n2020-08-31 00:00:00.0\tnull\t5.420534999272286\n2020-09-01 00:00:00.0\tnull\t5.488937726156687\n2020-09-02 00:00:00.0\tnull\t5.579729825986222\n2020-09-03 00:00:00.0\tnull\t5.6937321388027\n2020-09-04 00:00:00.0\tnull\t5.472270673671475\n2020-09-05 00:00:00.0\tnull\t5.41610040220442\n2020-09-06 00:00:00.0\tnull\t5.4116460518550396\n2020-09-07 00:00:00.0\tnull\t5.384495062789089\n2020-09-08 00:00:00.0\tnull\t5.420534999272286\n2020-09-09 00:00:00.0\tnull\t5.2574953720277815\n2020-09-10 00:00:00.0\tnull\t5.220355825078324\n2020-09-11 00:00:00.0\tnull\t5.442417710521793\n2020-09-12 00:00:00.0\tnull\t4.983606621708336\n2020-09-13 00:00:00.0\tnull\t4.795790545596741\n2020-09-14 00:00:00.0\tnull\t5.14166355650266\n2020-09-15 00:00:00.0\tnull\t5.6240175061873385\n2020-09-16 00:00:00.0\tnull\t5.187385805840755\n2020-09-17 00:00:00.0\tnull\t5.187385805840755\n2020-09-18 00:00:00.0\tnull\t5.262690188904886\n2020-09-19 00:00:00.0\tnull\t5.308267697401205\n2020-09-20 00:00:00.0\tnull\t4.890349128221754\n2020-09-21 00:00:00.0\tnull\t4.836281906951478\n2020-09-22 00:00:00.0\tnull\t5.480638923341991\n2020-09-23 00:00:00.0\tnull\t5.342334251964811\n2020-09-24 00:00:00.0\tnull\t5.1647859739235145\n2020-09-25 00:00:00.0\tnull\t5.0369526024136295\n2020-09-26 00:00:00.0\tnull\t5.123963979403259\n2020-09-27 00:00:00.0\tnull\t4.90527477843843\n2020-09-28 00:00:00.0\tnull\t5.683579767338681\n2020-09-29 00:00:00.0\tnull\t5.37989735354046\n2020-09-30 00:00:00.0\tnull\t5.241747015059643\n2020-10-01 00:00:00.0\tnull\t5.37989735354046\n2020-10-02 00:00:00.0\tnull\t5.003946305945459\n2020-10-03 00:00:00.0\tnull\t4.709530201312334\n2020-10-04 00:00:00.0\tnull\t5.135798437050262\n2020-10-05 00:00:00.0\tnull\t4.852030263919617\n2020-10-06 00:00:00.0\tnull\t5.236441962829949\n2020-10-07 00:00:00.0\tnull\t5.594711379601839\n2020-10-08 00:00:00.0\tnull\t5.697093486505405\n2020-10-09 00:00:00.0\tnull\t5.4638318050256105\n2020-10-10 00:00:00.0\tnull\t5.602118820879701\n2020-10-11 00:00:00.0\tnull\t5.337538079701318\n2020-10-12 00:00:00.0\tnull\t5.262690188904886\n2020-10-13 00:00:00.0\tnull\t5.602118820879701\n2020-10-14 00:00:00.0\tnull\t5.572154032177765\n2020-10-15 00:00:00.0\tnull\t5.537334267018537\n2020-10-16 00:00:00.0\tnull\t5.332718793265369\n2020-10-17 00:00:00.0\tnull\t5.579729825986222\n2020-10-18 00:00:00.0\tnull\t5.220355825078324\n2020-10-19 00:00:00.0\tnull\t5.214935757608986\n2020-10-20 00:00:00.0\tnull\t5.697093486505405\n2020-10-21 00:00:00.0\tnull\t5.529429087511423\n2020-10-22 00:00:00.0\tnull\t5.375278407684165\n2020-10-23 00:00:00.0\tnull\t5.4116460518550396\n2020-10-24 00:00:00.0\tnull\t5.407171771460119\n2020-10-25 00:00:00.0\tnull\t4.7535901911063645\n2020-10-26 00:00:00.0\tnull\t5.8522024797744745\n2020-10-27 00:00:00.0\tnull\t5.204006687076795\n2020-10-28 00:00:00.0\tnull\t5.846438775057725\n2020-10-29 00:00:00.0\tnull\t5.308267697401205\n2020-10-30 00:00:00.0\tnull\t5.676753802268282\n2020-10-31 00:00:00.0\tnull\t5.4116460518550396\n2020-11-01 00:00:00.0\tnull\t5.7745515455444085\n2020-11-02 00:00:00.0\tnull\t5.365976015021851\n2020-11-03 00:00:00.0\tnull\t5.755742213586912\n2020-11-04 00:00:00.0\tnull\t5.459585514144159\n2020-11-05 00:00:00.0\tnull\t5.717027701406222\n2020-11-06 00:00:00.0\tnull\t5.407171771460119\n2020-11-07 00:00:00.0\tnull\t5.934894195619588\n2020-11-08 00:00:00.0\tnull\t6.244166900663736\n2020-11-09 00:00:00.0\tnull\t5.517452896464707\n2020-11-10 00:00:00.0\tnull\t5.831882477283517\n2020-11-11 00:00:00.0\tnull\t5.805134968916488\n2020-11-12 00:00:00.0\tnull\t5.594711379601839\n2020-11-13 00:00:00.0\tnull\t5.634789603169249\n2020-11-14 00:00:00.0\tnull\t5.459585514144159\n2020-11-15 00:00:00.0\tnull\t5.69035945432406\n2020-11-16 00:00:00.0\tnull\t5.631211781821365\n2020-11-17 00:00:00.0\tnull\t5.973809611869261\n2020-11-18 00:00:00.0\tnull\t5.971261839790462\n2020-11-19 00:00:00.0\tnull\t5.62040086571715\n2020-11-20 00:00:00.0\tnull\t6.021023349349527\n2020-11-21 00:00:00.0\tnull\t5.749392985908253\n2020-11-22 00:00:00.0\tnull\t5.66988092298052\n2020-11-23 00:00:00.0\tnull\t5.594711379601839\n2020-11-24 00:00:00.0\tnull\t5.840641657373398\n2020-11-25 00:00:00.0\tnull\t5.755742213586912\n2020-11-26 00:00:00.0\tnull\t5.6937321388027\n2020-11-27 00:00:00.0\tnull\t5.768320995793772\n2020-11-28 00:00:00.0\tnull\t5.459585514144159\n2020-11-29 00:00:00.0\tnull\t5.4116460518550396\n2020-11-30 00:00:00.0\tnull\t5.594711379601839\n2020-12-01 00:00:00.0\tnull\t5.552959584921617\n2020-12-02 00:00:00.0\tnull\t5.799092654460526\n2020-12-03 00:00:00.0\tnull\t5.58724865840025\n2020-12-04 00:00:00.0\tnull\t6.063785208687608\n2020-12-05 00:00:00.0\tnull\t5.659482215759621\n2020-12-06 00:00:00.0\tnull\t5.723585101952381\n2020-12-07 00:00:00.0\tnull\t5.5134287461649825\n2020-12-08 00:00:00.0\tnull\t5.996452088619021\n2020-12-09 00:00:00.0\tnull\t5.857933154483459\n2020-12-10 00:00:00.0\tnull\t5.976350909297934\n2020-12-11 00:00:00.0\tnull\t5.986452005284438\n2020-12-12 00:00:00.0\tnull\t5.786897381366708\n2020-12-13 00:00:00.0\tnull\t5.846438775057725\n2020-12-14 00:00:00.0\tnull\t5.739792912179234\n2020-12-15 00:00:00.0\tnull\t6.056784013228625\n2020-12-16 00:00:00.0\tnull\t5.846438775057725\n2020-12-17 00:00:00.0\tnull\t5.981414211254481\n2020-12-18 00:00:00.0\tnull\t6.206575926724928\n2020-12-19 00:00:00.0\tnull\t6.1070228877422545\n2020-12-20 00:00:00.0\tnull\t5.8289456176102075\n2020-12-21 00:00:00.0\tnull\t6.061456918928017\n2020-12-22 00:00:00.0\tnull\t6.270988431858299\n2020-12-23 00:00:00.0\tnull\t6.709304340258298\n2020-12-24 00:00:00.0\tnull\t6.317164686747284\n2020-12-25 00:00:00.0\tnull\t6.261491684321042\n2020-12-26 00:00:00.0\tnull\t6.037870919922137\n2020-12-27 00:00:00.0\tnull\t6.068425588244111\n2020-12-28 00:00:00.0\tnull\t6.300785794663244\n2020-12-29 00:00:00.0\tnull\t6.57507584059962\n2020-12-30 00:00:00.0\tnull\t6.55250788703459\n2020-12-31 00:00:00.0\tnull\t6.54965074223381\n2021-01-01 00:00:00.0\tnull\t6.489204931325317\n2021-01-02 00:00:00.0\tnull\t6.244166900663736\n2021-01-03 00:00:00.0\tnull\t6.405228458030842\n2021-01-04 00:00:00.0\tnull\t6.529418838262226\n2021-01-05 00:00:00.0\tnull\t6.709304340258298\n2021-01-06 00:00:00.0\tnull\t7.01211529430638\n2021-01-07 00:00:00.0\tnull\t6.535241271013659\n2021-01-08 00:00:00.0\tnull\t6.813444599510896\n2021-01-09 00:00:00.0\tnull\t6.48768401848461\n2021-01-10 00:00:00.0\tnull\t6.386879319362645\n2021-01-11 00:00:00.0\tnull\t6.523562306149512\n2021-01-12 00:00:00.0\tnull\t6.98100574072173\n2021-01-13 00:00:00.0\tnull\t7.106606137727303\n2021-01-14 00:00:00.0\tnull\t6.959398512133975\n2021-01-15 00:00:00.0\tnull\t6.807934943699926\n2021-01-16 00:00:00.0\t8.006367567650246\t6.4967749901858625\n2021-01-17 00:00:00.0\tnull\t6.393590753950631\n2021-01-18 00:00:00.0\tnull\t6.586171654854675\n2021-01-19 00:00:00.0\tnull\t7.091742115095153\n2021-01-20 00:00:00.0\t7.690286020676768\t6.826545223556594\n2021-01-21 00:00:00.0\tnull\t6.932447891572509\n2021-01-22 00:00:00.0\tnull\t6.881411303642535\n2021-01-23 00:00:00.0\t7.288244401020124\t6.661854740545311\n2021-01-24 00:00:00.0\tnull\t6.472346294500901\n2021-01-25 00:00:00.0\t7.336936913707618\t6.647688373563329\n2021-01-26 00:00:00.0\t7.945555428253489\t6.890609120147166\n2021-01-27 00:00:00.0\t7.963807953231451\t6.957497370876951\n2021-01-28 00:00:00.0\t8.068402958569699\t6.903747257584598\n2021-01-29 00:00:00.0\t7.641084249174914\t6.740519359606223\n2021-01-30 00:00:00.0\t11.42239882577067\t6.421622267806518\n2021-01-31 00:00:00.0\t10.491274217438248\t6.263398262591624\n2021-02-01 00:00:00.0\t11.270930333970657\t6.2324480165505225\n2021-02-02 00:00:00.0\t10.97532798515125\t6.784457062637643\n2021-02-03 00:00:00.0\t10.859421985014835\t6.5638555265321274\n2021-02-04 00:00:00.0\t10.676485114583807\t6.340359303727752\n2021-02-05 00:00:00.0\t10.942208283963632\t6.304448802421981\n2021-02-06 00:00:00.0\t10.964986239864137\t6.306275286948016\n2021-02-07 00:00:00.0\tnull\t5.877735781779639\n2021-02-08 00:00:00.0\tnull\t6.093569770045136\n2021-02-09 00:00:00.0\t11.123742087186342\t6.54965074223381\n2021-02-10 00:00:00.0\t11.809862081717386\t6.284134161070802\n2021-02-11 00:00:00.0\t11.634789052727069\t6.20455776256869\n2021-02-12 00:00:00.0\t12.455994437876988\t6.336825731146441\n2021-02-13 00:00:00.0\t12.54467475521772\t5.863631175598097\n2021-02-14 00:00:00.0\tnull\t5.680172609017068\n2021-02-15 00:00:00.0\tnull\t6.154858094016418\n2021-02-16 00:00:00.0\t12.200155171766136\t6.144185634125646\n2021-02-17 00:00:00.0\t12.110882458526424\t5.996452088619021\n2021-02-18 00:00:00.0\t11.959564505661183\t6.236369590203704\n2021-02-19 00:00:00.0\t12.255029462478927\t5.950642552587727\n2021-02-20 00:00:00.0\t11.541823855012877\t5.66988092298052\n2021-02-21 00:00:00.0\t8.610683534503575\t5.820082930352362\n2021-02-22 00:00:00.0\t11.723810182888498\t5.817111159963204\n2021-02-23 00:00:00.0\t11.594173599670746\t6.152732694704104\n2021-02-24 00:00:00.0\t12.608814047716741\t5.786897381366708\n2021-02-25 00:00:00.0\t12.547258754377607\t5.877735781779639\n2021-02-26 00:00:00.0\t12.399395960431905\t5.75890177387728\n2021-02-27 00:00:00.0\t12.148141580330849\t5.82600010738045\n2021-02-28 00:00:00.0\t8.952475967933584\t5.41610040220442\n2021-03-01 00:00:00.0\t12.291580392634769\t5.752572638825633\n2021-03-02 00:00:00.0\t11.988693696920816\t5.8944028342648505\n2021-03-03 00:00:00.0\t12.051726113191732\t5.627621113690637\n2021-03-04 00:00:00.0\t11.891300254954798\t5.802118375377063\n2021-03-05 00:00:00.0\t12.380324227492979\t5.424950017481403\n2021-03-06 00:00:00.0\t12.230604269552826\t5.572154032177765\n2021-03-07 00:00:00.0\t10.614007941153417\t5.438079308923196\n2021-03-08 00:00:00.0\t12.76075054786454\t5.937536205082426\n2021-03-09 00:00:00.0\t11.852414574821017\t5.666426688112432\n2021-03-10 00:00:00.0\t12.737294837821386\t5.707110264748875\n2021-03-11 00:00:00.0\t12.14636510306789\t5.780743515792329\n2021-03-12 00:00:00.0\t12.644388864905734\t5.424950017481403\n2021-03-13 00:00:00.0\t12.908298490023324\t5.683579767338681\n2021-03-14 00:00:00.0\t9.71250862865099\t5.5254529391317835\n2021-03-15 00:00:00.0\t12.881653945410097\t5.733341276897746\n2021-03-16 00:00:00.0\t12.36937701648803\t5.726847747587197\n2021-03-17 00:00:00.0\t12.214531766071808\t5.6240175061873385\n2021-03-18 00:00:00.0\t12.141214073181677\t5.564520407322694\n2021-03-19 00:00:00.0\t12.55261189643723\t6.300785794663244\n2021-03-20 00:00:00.0\t11.433438436211896\t5.2832037287379885\n2021-03-21 00:00:00.0\t9.978038283800425\t5.43372200355424\n2021-03-22 00:00:00.0\t11.713749784995159\t5.560681631015528\n2021-03-23 00:00:00.0\t11.89288813266597\t5.7745515455444085\n2021-03-24 00:00:00.0\t13.749489338172111\t5.7745515455444085\n2021-03-25 00:00:00.0\t12.572072477248573\t5.955837369464831\n2021-03-26 00:00:00.0\t12.500710470547961\t5.840641657373398\n2021-03-27 00:00:00.0\t12.694152535307163\t5.262690188904886\n2021-03-28 00:00:00.0\t12.464000159081326\t5.209486152841421\n2021-03-29 00:00:00.0\t12.268648304012654\t5.7430031878094825\n2021-03-30 00:00:00.0\t12.18986704118324\t5.6240175061873385\n2021-03-31 00:00:00.0\t13.130395037101461\t5.54907608489522\n2021-04-01 00:00:00.0\t12.443422803425948\t6.008813185442595\n2021-04-02 00:00:00.0\t11.943174238433905\t5.5093883366279774\n2021-04-03 00:00:00.0\t11.814798862532433\t5.123963979403259\n2021-04-04 00:00:00.0\t11.065888080951105\t5.605802066295998\n2021-04-05 00:00:00.0\t11.941468875240469\t5.438079308923196\n2021-04-06 00:00:00.0\t12.734639950772321\t5.4638318050256105\n2021-04-07 00:00:00.0\t12.861575070463166\t5.58724865840025\n2021-04-08 00:00:00.0\t13.510979332414358\t5.860786223465865\n2021-04-09 00:00:00.0\t11.951664149841319\t5.568344503761097\n2021-04-10 00:00:00.0\t11.98246648722985\t5.407171771460119\n2021-04-11 00:00:00.0\t11.914288839123973\t5.662960480135946\n2021-04-12 00:00:00.0\t11.602939828478998\t5.575949103146316\n2021-04-13 00:00:00.0\t11.507349950637042\t6.0014148779611505\n2021-04-14 00:00:00.0\t12.797762793032508\t5.908082938168931\n2021-04-15 00:00:00.0\t11.726850657474358\t5.746203190540153\n2021-04-16 00:00:00.0\t12.333766407295071\t5.726847747587197\n2021-04-17 00:00:00.0\t12.60650176095356\t5.634789603169249\n2021-04-18 00:00:00.0\t13.249307873981914\t5.529429087511423\n2021-04-19 00:00:00.0\t12.282565984718202\t5.700443573390687\n2021-04-20 00:00:00.0\t12.021590756898878\t6.018593214496234\n2021-04-21 00:00:00.0\t12.26703603348829\t5.739792912179234\n2021-04-22 00:00:00.0\t11.555620903497847\t5.730099782973574\n2021-04-23 00:00:00.0\t12.134324195206457\t5.932245187448011\n2021-04-24 00:00:00.0\t10.915088464214607\t5.4680601411351315\n2021-04-25 00:00:00.0\t11.27801293005602\t5.673323267171493\n2021-04-26 00:00:00.0\t11.503723254205429\t5.68697535633982\n2021-04-27 00:00:00.0\t12.036919996784569\t5.902633333401366\n2021-04-28 00:00:00.0\t13.87342374244874\t5.8289456176102075\n2021-04-29 00:00:00.0\t11.442138127248517\t5.981414211254481\n2021-04-30 00:00:00.0\t12.00701176473192\t5.541263545158426\n2021-05-01 00:00:00.0\t11.751383153993038\t5.648974238161206\n2021-05-02 00:00:00.0\t10.94537074695815\t5.43372200355424\n2021-05-03 00:00:00.0\t12.073380900303095\t5.54907608489522\n2021-05-04 00:00:00.0\t12.598540318407686\t5.814130531825066\n2021-05-05 00:00:00.0\t12.455390637813846\t5.840641657373398\n2021-05-06 00:00:00.0\t11.980244243226975\t5.948034989180646\n2021-05-07 00:00:00.0\t13.29301544310228\t5.666426688112432\n2021-05-08 00:00:00.0\t12.439273452673941\t5.44673737166631\n2021-05-09 00:00:00.0\t13.500074892899141\t5.54907608489522\n2021-05-10 00:00:00.0\t13.042029293951659\t5.860786223465865\n2021-05-11 00:00:00.0\t12.976738582044792\t5.749392985908253\n2021-05-12 00:00:00.0\t13.892716013673171\t5.717027701406222\n2021-05-13 00:00:00.0\t12.07498968162767\t5.455321115357702\n2021-05-14 00:00:00.0\t12.186431005274885\t5.5254529391317835\n2021-05-15 00:00:00.0\t12.657422112740964\t5.480638923341991\n2021-05-16 00:00:00.0\t11.441730169928077\t5.407171771460119\n2021-05-17 00:00:00.0\t13.054009587375598\t5.564520407322694\n2021-05-18 00:00:00.0\t13.560491848726901\t5.75890177387728\n2021-05-19 00:00:00.0\t13.251524986416104\t5.872117789475416\n2021-05-20 00:00:00.0\t13.043311512017738\t5.91350300563827\n2021-05-21 00:00:00.0\t13.543796318394032\t5.910796644040527\n2021-05-22 00:00:00.0\t13.642612064329434\t5.342334251964811\n2021-05-23 00:00:00.0\t12.324202287778219\t5.303304908059076\n2021-05-24 00:00:00.0\t13.136528575587674\t5.648974238161206\n2021-05-25 00:00:00.0\t13.475993289937048\t5.631211781821365\n2021-05-26 00:00:00.0\t12.864892321640468\t5.713732805509369\n2021-05-27 00:00:00.0\t12.31336529341779\t5.676753802268282\n2021-05-28 00:00:00.0\t12.108068339825607\t5.703782474656201\n2021-05-29 00:00:00.0\t13.304154793698638\t5.53338948872752\n2021-05-30 00:00:00.0\t12.684800606874886\t5.298317366548036\n2021-05-31 00:00:00.0\t14.522393963136112\t5.805134968916488\n2021-06-01 00:00:00.0\t13.590298619010428\t5.768320995793772\n2021-06-02 00:00:00.0\t13.126182076881603\t5.739792912179234\n2021-06-03 00:00:00.0\t13.047006009696313\t5.517452896464707\n2021-06-04 00:00:00.0\t12.416993806818487\t5.627621113690637\n2021-06-05 00:00:00.0\t12.362490752799834\t5.552959584921617\n2021-06-06 00:00:00.0\t12.395063579171513\t5.5134287461649825\n2021-06-07 00:00:00.0\t13.27607967718795\t5.648974238161206\n2021-06-08 00:00:00.0\t13.916203497416703\t6.021023349349527\n2021-06-09 00:00:00.0\t13.846442203832392\t5.8971538676367405\n"
+          },
+          {
+            "type": "HTML",
+            "data": "<div class=\"result-alert alert-warning\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Output is truncated</strong> to 1000 rows. Learn more about <strong>zeppelin.spark.maxResult</strong></div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n## Visualizacion a travès de angular + framework (Vega-Lite)",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:20:22-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627440282632_584564956",
+      "id": "paragraph_1627440282632_584564956",
+      "dateCreated": "2021-07-27T21:44:42-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:37",
+      "dateFinished": "2021-07-27T23:20:22-0500",
+      "dateStarted": "2021-07-27T23:20:22-0500",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Visualizacion a travès de angular + framework (Vega-Lite)</h2>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-27T23:20:04-0500",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1627446004303_342440590",
+      "id": "paragraph_1627446004303_342440590",
+      "dateCreated": "2021-07-27T23:20:04-0500",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:554"
+    }
+  ],
+  "name": "Proyecto Final",
+  "id": "2GDQC4YA4",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Proyecto Final"
+}
